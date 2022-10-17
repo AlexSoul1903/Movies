@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Nc5tpPAq/fHf1jNCD1mPQwnNRdRgnQVRaZ4uxvAsp5bvkzkP5BfFAKvkqAzSFtAMm7rqB9VaHvRhaIr9/tMiig==",
+  "dgSpecHash": "Ta6+EGhNNKTVNE+PLNcpYVwEDjiCoKht3PsyLyHmj4M29Whxzd8QaMmDHqG+7+oX8QyxxMEp+s8EGiyRgcZUXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexm\\source\\repos\\Movies\\Movies.Api\\Movies.Api.csproj",
+  "projectFilePath": "C:\\Users\\alexm\\OneDrive\\Documentos\\4to cuatrimestre de clases itla tareas\\Programación 2\\Movies\\Movies.Api\\Movies.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexm\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\alexm\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

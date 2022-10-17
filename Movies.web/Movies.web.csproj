@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Movies\" />
     <Folder Include="Views\Sales\" />
     <Folder Include="Views\Reports\" />
     <Folder Include="Views\Rent\" />

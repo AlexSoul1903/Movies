@@ -21,6 +21,8 @@ namespace Movies.web.Controllers
                   Password="123",
                   Email="Alex@gmail.com",
                   Age=18
+                 
+                  
               },
 
                  new Client
