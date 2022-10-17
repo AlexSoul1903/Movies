@@ -1,0 +1,69 @@
+﻿@model Movies.web.Models.Client
+
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body class="bg-black">
+
+
+    <h1 class="text-light">Sign up</h1>
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4 text-light">
+            <form asp-action="Registration">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Last_name" for="last_name" class="control-label"></label>
+                    <input asp-for="Last_name" id="last_name" class="form-control" />
+                    <span asp-validation-for="Last_name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Age" for="age" class="control-label"></label>
+                    <input asp-for="Age" id="age" class="form-control" />
+                    <span asp-validation-for="Age" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" for="email" class="control-label"></label>
+                    <input asp-for="Email" id="email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" for="password" class="control-label"></label>
+                    <input asp-for="Password" id="password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="create" value="Create" class="btn btn-primary mt-3" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back</a>
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+	}

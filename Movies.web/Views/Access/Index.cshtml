@@ -1,0 +1,67 @@
+﻿@model Person
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Movies</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body class="bg-black">
+
+
+	<div class="row">
+
+		<div class="col-12 col-sm-12 col-md-6 offset-md-3 mt-3">
+
+			<div class="card">
+
+				<div class="card-header bg-danger text-light">
+					<h4 class="text-center">Enter your data</h4>
+				</div>
+
+				<h5 class="card-title text-center mt-2">Fill all the fields.</h5>
+
+				<div class="card-body col-12 ">
+
+
+
+					<div class="mb-3">
+						<label for="email" class="form-label">Email:</label>
+						<input id="email" type="text" class="form-control" asp-for="Email">
+					</div>
+
+					<div class="mb-3">
+						<label for="password" class="form-label">password:</label>
+						<input id="password" type="text" class="form-control" asp-for="Password">
+					</div>
+
+					<div>
+
+						<button asp-for="Index" type="button" class="btn btn-outline-primary float-end"><a asp-controller="Home" asp-action="Index">Enter</a></button>
+						<button type="button" class="btn btn-outline-dark float-end me-2"> <a class="text-black" asp-controller="access" asp-action="register"> Register</a></button>
+						<button type="button" class="btn btn-outline-warning float-end me-3">Clean</button>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+
+	</div>
+	</main>
+
+
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>
