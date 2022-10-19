@@ -1,0 +1,95 @@
+﻿@model IEnumerable<Movies.web.Models.Movie>
+
+@{
+    ViewData["Title"] = "List of movies";
+}
+
+<h1 class="text-light">Movies for sale</h1>
+
+<table class="table text-light">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Front_page)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Director)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Relase_date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sale_price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rent_price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+
+                    <img src="@item.Front_page" class="img-thumbnail img-responsive " width="200" height="100" />
+
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Genre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rating)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Director)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Duration)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Relase_date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sale_price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rent_price)
+                </td>
+                <td>
+                    @* @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+                    <p>
+                        <a asp-action="" text>Buy this movie!</a> @*Donde dice create deberia de redirigir a la pagina de facturacion*@
+                    </p>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

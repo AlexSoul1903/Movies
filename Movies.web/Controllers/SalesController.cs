@@ -4,13 +4,13 @@ using Movies.web.Models;
 
 namespace Movies.web.Controllers
 {
-    public class MoviesController : Controller
+    public class SalesController : Controller
     {
-        // GET: MoviesController
-        public ActionResult Index() {
+        // GET: SalesController
+        public ActionResult Index()
+        {
 
-
-            IEnumerable<Movie> movies = new List<Movie>() {
+            IEnumerable<Movie> sales = new List<Movie>() {
 
                 new Movie
                 {
@@ -105,24 +105,22 @@ namespace Movies.web.Controllers
 
 
             };
-
-
-            return View(movies);
+            return View(sales);
         }
 
-        // GET: MoviesController/Details/5
+        // GET: SalesController/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: MoviesController/Create
+        // GET: SalesController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: MoviesController/Create
+        // POST: SalesController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -137,13 +135,13 @@ namespace Movies.web.Controllers
             }
         }
 
-        // GET: MoviesController/Edit/5
+        // GET: SalesController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: MoviesController/Edit/5
+        // POST: SalesController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -158,13 +156,13 @@ namespace Movies.web.Controllers
             }
         }
 
-        // GET: MoviesController/Delete/5
+        // GET: SalesController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: MoviesController/Delete/5
+        // POST: SalesController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
