@@ -20,7 +20,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.FrontPage)
-
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Genre)
@@ -73,13 +72,13 @@
                 @Html.DisplayFor(modelItem => item.Duration)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.RelaseDate)
+                @item.RelaseDate.ToShortDateString()
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.SalePrice)
+                $@Html.DisplayFor(modelItem => item.SalePrice)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.RentPrice)
+                $@Html.DisplayFor(modelItem => item.RentPrice)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
