@@ -72,7 +72,7 @@
                     @Html.DisplayFor(modelItem => item.Duration)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.RelaseDate)
+                    @item.RelaseDate.ToShortDateString()
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.SalePrice)
