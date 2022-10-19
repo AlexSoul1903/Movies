@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Movies.web.Models;
+using Movies.web.ViewModels;
 
 namespace Movies.web.Controllers
 {
@@ -9,6 +10,7 @@ namespace Movies.web.Controllers
         // GET: Clients
         public ActionResult Index()
         {
+
             IEnumerable<Client> clients = new List<Client>()
             {
 
@@ -21,8 +23,8 @@ namespace Movies.web.Controllers
                   Password="123",
                   Email="Alex@gmail.com",
                   Age=18
-                 
-                  
+
+
               },
 
                  new Client
@@ -39,6 +41,8 @@ namespace Movies.web.Controllers
               },
 
           };
+
+     
 
             return View(clients);
         }

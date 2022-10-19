@@ -10,46 +10,104 @@ namespace Movies.web.Controllers
         public ActionResult Index() {
 
 
-            IEnumerable<Movie> Movies = new List<Movie>()
-            {
+            IEnumerable<Movie> movies = new List<Movie>() {
 
-              new Movie
-              {
-                  Id=1,
+                new Movie
+                {
+                     Id=1,
                   Name="Avengers Infinity War",
-                  Director="Anthony Russo ",
-                  Front_page = "Images/Avenger.jpg",
-
-            Genre ="Action",
+                  Director="Anthony Russo",
+                 Front_page = "Images/Avenger.jpg",
+                  Genre ="Action",
                   Duration="2h 29m",
-                  Relase_date= Convert.ToDateTime("04-27-18"),
+                  Relase_date= Convert.ToDateTime("04/12/18"),
                   Rating="PG-13",
                   Rent_price=70,
                   Sale_price=150
-              },
+                },
 
-
-                 new Movie
-              {
-
-                Id=2,
-                  Name="Sherk",
-            Director="Andrew Adamson, Vicky Jenson.",
-            Front_page="Images/Sherk.jpg",
-            Genre="Comedy",
+                new Movie
+                {
+                 Id=2,
+                 Name="Sherk",
+                 Director="Andrew Adamson, Vicky Jenson.",
+                 Front_page="Images/Sherk.jpg",
+                 Genre="Comedy",
                  Duration="1h 30m",
-                 Relase_date= Convert.ToDateTime("04-22-2001"),
+                 Relase_date= Convert.ToDateTime("04/12/2001"),
                  Rating="PG-MPAA",
                  Rent_price=40,
                  Sale_price=120
+                },
+                   new Movie
+              {
+
+                  Id=3,
+                  Name="Harry Potter",
+                  Director="Chris Columbus",
+                  Front_page="Images/Harry Potter.jpg",
+                  Genre="Fiction",
+                  Duration="2h 32m",
+                  Relase_date= Convert.ToDateTime("11/14/2001"),
+                  Rating="PG-MPAA",
+                  Rent_price=50,
+                  Sale_price=130
+
+              },
+                 new Movie
+              {
+
+                  Id=4,
+                  Name="Kimetsu",
+                  Director="Haruo Sotozaki",
+                  Front_page="Images/Kimetsu.jpg",
+                  Genre="Fiction",
+                  Duration="1h 57m",
+                  Relase_date= Convert.ToDateTime("10/16/20"),
+                  Rating="PG-MPAA",
+                  Rent_price=45,
+                  Sale_price=130
+
+              },
+
+                  new Movie
+              {
+
+                  Id=5,
+                  Name="Pitufos 2",
+                  Director="Raja Gosnell",
+                  Front_page="Images/Pitufos 2.jpg",
+                  Genre="Comedy",
+                  Duration="1h 45m",
+                  Relase_date= Convert.ToDateTime("07/28/13"),
+                  Rating="PG-MPAA",
+                  Rent_price=45,
+                  Sale_price=130
+
+              },
+
+                   new Movie
+              {
+
+                  Id=6,
+                  Name="Titanic",
+                  Director="James Cameron",
+                  Front_page="Images/Titanic.jpg",
+                  Genre="Romance/Drama",
+                  Duration="3h 14m",
+                  Relase_date= Convert.ToDateTime("12/19/1997"),
+                  Rating="PG-MPAA",
+                  Rent_price=50,
+                  Sale_price=115
 
               },
 
 
-          };
+
+            };
 
 
-            return View(Movies);
+            return View(movies);
         }
 
         // GET: MoviesController/Details/5

@@ -13,13 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BF591BFA-A821-448D-A21F-71A39B8C5C43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.web", "Movies.web\Movies.web.csproj", "{E94EEFB5-D487-4769-AB1A-A8DCC3C36023}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.web", "Movies.web\Movies.web.csproj", "{E94EEFB5-D487-4769-AB1A-A8DCC3C36023}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Api", "Movies.Api\Movies.Api.csproj", "{AEA14D4B-3233-4F85-8528-3F9A10A67B66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Api", "Movies.Api\Movies.Api.csproj", "{AEA14D4B-3233-4F85-8528-3F9A10A67B66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Service", "Movies.Service\Movies.Service.csproj", "{10CD1CE0-7170-43F0-AB47-2B8078FB52AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Service", "Movies.Service\Movies.Service.csproj", "{10CD1CE0-7170-43F0-AB47-2B8078FB52AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.DAL", "Movies.DAL\Movies.DAL.csproj", "{1FA44149-4124-436B-ACE6-37C1CFCFCBEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.DAL", "Movies.DAL\Movies.DAL.csproj", "{1FA44149-4124-436B-ACE6-37C1CFCFCBEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

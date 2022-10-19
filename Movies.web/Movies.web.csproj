@@ -22,9 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Sales\" />
     <Folder Include="Views\Reports\" />
-    <Folder Include="Views\Rent\" />
     <Folder Include="Views\Payment method\" />
   </ItemGroup>
 
