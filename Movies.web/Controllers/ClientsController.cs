@@ -19,7 +19,7 @@ namespace Movies.web.Controllers
 
                   Id=1,
                   Name="Alex",
-              Last_name="Frias Molina",
+              LastName="Frias Molina",
                   Password="123",
                   Email="Alex@gmail.com",
                   Age=18
@@ -32,7 +32,7 @@ namespace Movies.web.Controllers
 
                   Id=2,
                   Name="Alexa",
-                  Last_name="Frias Molina",
+                  LastName="Frias Molina",
                   Password="123d",
                   Email="Alexa@gmail.com",
                   Age=13
