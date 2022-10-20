@@ -2,5 +2,6 @@
 {
     public class RentInvoice: Invoice
     {
+        public int RentId { get; set; }
     }
 }

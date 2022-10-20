@@ -4,7 +4,7 @@
     {
         public Int64 CardNumber { get; set; }
         public string OwnerName { get; set; }
-        public int DateOfExpiry { get; set; }
+        public int ExpirationDate { get; set; }
         public int Cvv { get; set; }
     }
 }
