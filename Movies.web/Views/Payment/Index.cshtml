@@ -1,0 +1,44 @@
+﻿@model Movies.web.Models.Payment
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-light">Pay</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CardNumber" class="text-light"></label>
+                <input asp-for="CardNumber" type ="text" class="form-control" />
+                <span asp-validation-for="CardNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OwnerName" class="text-light"></label>
+                <input asp-for="OwnerName" type ="text" class="form-control" />
+                <span asp-validation-for="OwnerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfExpiry" class="text-light"></label>
+                <input asp-for="DateOfExpiry" type ="text" class="form-control" />
+                <span asp-validation-for="DateOfExpiry" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cvv" class="text-light"></label>
+                <input asp-for="Cvv" type ="text" class="form-control" />
+                <span asp-validation-for="Cvv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
