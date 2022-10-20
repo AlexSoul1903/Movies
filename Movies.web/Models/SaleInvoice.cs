@@ -2,5 +2,6 @@
 {
     public class SaleInvoice: Invoice
     {
+        public int SaleId { get; set; }
     }
 }

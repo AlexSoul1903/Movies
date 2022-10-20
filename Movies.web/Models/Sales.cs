@@ -4,8 +4,8 @@
     {
 
         public int Id { get; set; }
-        public int Client_id { get; set; }
-        public int Movie_id { get; set; }
+        public int ClientId { get; set; }
+        public int MovieId { get; set; }
         public double SalePrice { get; set; }
         public DateOnly SaleDate { get; set; }
   
