@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexm\\OneDrive\\Documentos\\4to cuatrimestre de clases itla tareas\\Programación 2\\Movies\\Movies.Service\\Movies.Service.csproj",
+      "projectUniqueName": "C:\\Users\\alexm\\Source\\Repos\\AlexSoul1903\\Movies\\Movies.Service\\Movies.Service.csproj",
       "projectName": "Movies.Service",
-      "projectPath": "C:\\Users\\alexm\\OneDrive\\Documentos\\4to cuatrimestre de clases itla tareas\\Programación 2\\Movies\\Movies.Service\\Movies.Service.csproj",
+      "projectPath": "C:\\Users\\alexm\\Source\\Repos\\AlexSoul1903\\Movies\\Movies.Service\\Movies.Service.csproj",
       "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexm\\OneDrive\\Documentos\\4to cuatrimestre de clases itla tareas\\Programación 2\\Movies\\Movies.Service\\obj\\",
+      "outputPath": "C:\\Users\\alexm\\Source\\Repos\\AlexSoul1903\\Movies\\Movies.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",

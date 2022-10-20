@@ -17,13 +17,13 @@ namespace Movies.web.Controllers
                      Id=1,
                   Name="Avengers Infinity War",
                   Director="Anthony Russo",
-                 Front_page = "Images/Avenger.jpg",
+                 FrontPage = "Images/Avenger.jpg",
                   Genre ="Action",
                   Duration="2h 29m",
-                  Relase_date= Convert.ToDateTime("04/12/18"),
+                  RelaseDate= new DateOnly(2018, 4, 12),
                   Rating="PG-13",
-                  Rent_price=70,
-                  Sale_price=150
+                  RentPrice=70,
+                  SalePrice=150
                 },
 
                 new Movie
@@ -31,13 +31,13 @@ namespace Movies.web.Controllers
                  Id=2,
                  Name="Sherk",
                  Director="Andrew Adamson, Vicky Jenson.",
-                 Front_page="Images/Sherk.jpg",
+                 FrontPage="Images/Sherk.jpg",
                  Genre="Comedy",
                  Duration="1h 30m",
-                 Relase_date= Convert.ToDateTime("04/12/2001"),
+                 RelaseDate= new DateOnly(2001, 4, 12),
                  Rating="PG-MPAA",
-                 Rent_price=40,
-                 Sale_price=120
+                 RentPrice=40,
+                 SalePrice=120
                 },
                    new Movie
               {
@@ -45,13 +45,13 @@ namespace Movies.web.Controllers
                   Id=3,
                   Name="Harry Potter",
                   Director="Chris Columbus",
-                  Front_page="Images/Harry Potter.jpg",
+                  FrontPage="Images/Harry Potter.jpg",
                   Genre="Fiction",
                   Duration="2h 32m",
-                  Relase_date= Convert.ToDateTime("11/14/2001"),
+                  RelaseDate= new DateOnly(2001, 11, 14),
                   Rating="PG-MPAA",
-                  Rent_price=50,
-                  Sale_price=130
+                  RentPrice=50,
+                  SalePrice=130
 
               },
                  new Movie
@@ -60,13 +60,13 @@ namespace Movies.web.Controllers
                   Id=4,
                   Name="Kimetsu",
                   Director="Haruo Sotozaki",
-                  Front_page="Images/Kimetsu.jpg",
+                  FrontPage="Images/Kimetsu.jpg",
                   Genre="Fiction",
                   Duration="1h 57m",
-                  Relase_date= Convert.ToDateTime("10/16/20"),
+                  RelaseDate= new DateOnly(2020, 10, 16),
                   Rating="PG-MPAA",
-                  Rent_price=45,
-                  Sale_price=130
+                  RentPrice=45,
+                  SalePrice=130
 
               },
 
@@ -76,13 +76,13 @@ namespace Movies.web.Controllers
                   Id=5,
                   Name="Pitufos 2",
                   Director="Raja Gosnell",
-                  Front_page="Images/Pitufos 2.jpg",
+                  FrontPage="Images/Pitufos 2.jpg",
                   Genre="Comedy",
                   Duration="1h 45m",
-                  Relase_date= Convert.ToDateTime("07/28/13"),
+                  RelaseDate= new DateOnly(2013, 7, 28),
                   Rating="PG-MPAA",
-                  Rent_price=45,
-                  Sale_price=130
+                  RentPrice=45,
+                  SalePrice=130
 
               },
 
@@ -92,13 +92,13 @@ namespace Movies.web.Controllers
                   Id=6,
                   Name="Titanic",
                   Director="James Cameron",
-                  Front_page="Images/Titanic.jpg",
+                  FrontPage="Images/Titanic.jpg",
                   Genre="Romance/Drama",
                   Duration="3h 14m",
-                  Relase_date= Convert.ToDateTime("12/19/1997"),
+                  RelaseDate= new DateOnly(1997, 12, 19),
                   Rating="PG-MPAA",
-                  Rent_price=50,
-                  Sale_price=115
+                  RentPrice=50,
+                  SalePrice=115
 
               },
 
