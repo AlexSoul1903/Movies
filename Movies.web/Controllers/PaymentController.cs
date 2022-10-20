@@ -20,8 +20,8 @@ namespace Movies.web.Controllers
         {
             Payment payment = new Payment();
             payment.CardNumber = Convert.ToInt64(Request.Form["CardNumber"]);
-            payment.OwnerName = Request.Form["Owner Name"].ToString();
-            payment.ExpirationDate = Convert.ToInt32(Request.Form["Date of Expiry"]);
+            payment.OwnerName = Request.Form["OwnerName"].ToString();
+            payment.ExpirationDate = Convert.ToInt32(Request.Form["ExpirationDate"]);
             payment.Cvv = Convert.ToInt32(Request.Form["CVV"]);
             return View();
         }
