@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Movies.DAL.Core
 {
-  public interface IRepositoyBase<TEntity> where TEntity: class
+  public interface IRepositoryBase<TEntity> where TEntity: class
     {
         void Save(TEntity entity);
         void Update(TEntity entity);
