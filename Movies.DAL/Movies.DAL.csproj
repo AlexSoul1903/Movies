@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <Folder Include="Context\" />
-    <Folder Include="Core\" />
     <Folder Include="Entities\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
