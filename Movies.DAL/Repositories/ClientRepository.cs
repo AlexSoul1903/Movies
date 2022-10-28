@@ -41,20 +41,19 @@ namespace Movies.DAL.Repositories
             return context.Clients.Find(clientId);
         }
 
-        public void Modify(Clients entity)
-        {
-            throw new NotImplementedException();
-        }
 
         public void Remove(Clients client)
         {
+            client.DeletedDate = DateTime.Now;
             context.Clients.Remove(client);
+        
         }
 
       
 
         public void Save(Clients client)
         {
+          
             context.Clients.Add(client);
             context.SaveChanges();
         }
@@ -70,6 +69,7 @@ namespace Movies.DAL.Repositories
                     clientToModify.LastName = clients.LastName;
                     clientToModify.Age = clients.Age;
                     clientToModify.Email = clients.Email;
+                clientToModify.UpdatedDate = DateTime.Now;
 
                     context.Clients.Update(clientToModify);
                 }
