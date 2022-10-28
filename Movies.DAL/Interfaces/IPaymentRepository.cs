@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Movies.DAL.Interfaces
 {
-    internal interface IPaymentRepository : IRepositoryBase<Payment>
+    public interface IPaymentRepository : IRepositoryBase<Payment>
     {
 
     }
