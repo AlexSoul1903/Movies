@@ -1,19 +1,28 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Movies.DAL.Interfaces;
 using Movies.web.Models;
 using Movies.web.ViewModels;
+using System;
+using System.Linq;
 
 namespace Movies.web.Controllers
 {
     public class ClientsController : Controller
     {
+
+
         // GET: Clients
         public ActionResult Index()
         {
 
+
+          
+
+           
             IEnumerable<Client> clients = new List<Client>()
             {
-
+                
               new Client
               {
 
