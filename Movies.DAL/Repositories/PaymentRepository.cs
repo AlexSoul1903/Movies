@@ -1,4 +1,5 @@
-﻿using Movies.DAL.Context;
+﻿using Microsoft.Extensions.Logging;
+using Movies.DAL.Context;
 using Movies.DAL.Entities;
 using Movies.DAL.Interfaces;
 using System;
@@ -12,39 +13,57 @@ namespace Movies.DAL.Repositories
 {
     public class PaymentRepository : IPaymentRepository
     {
-        private readonly MoviesContext context; 
-        public PaymentRepository(MoviesContext context)
+        private readonly MoviesContext context;
+        private readonly ILogger<PaymentRepository> logger;
+        public PaymentRepository(MoviesContext context, ILogger<PaymentRepository> logger)
         {
-
+            this.context = context;
+            this.logger = logger;
         }
         public bool Exists(Expression<Func<Payment, bool>> filter)
         {
-            throw new NotImplementedException();
+            return context.Payment.Any(filter);
         }
 
         public IEnumerable<Payment> GetEntities()
         {
-            throw new NotImplementedException();
+            return context.Payment;
         }
 
-        public Payment GetEntity(int entityid)
+        public Payment GetEntity(int paymentId)
         {
-            throw new NotImplementedException();
+            return context.Payment.Find(paymentId);
         }
 
-        public void Remove(Payment entity)
+        public void Remove(Payment payment)
         {
-            throw new NotImplementedException();
+            payment.DeletedDate = DateTime.Now;
+            context.Payment.Remove(payment);
         }
 
-        public void Save(Payment entity)
+        public void Save(Payment payment)
         {
-            throw new NotImplementedException();
+            context.Payment.Add(payment);
+            context.SaveChanges();
         }
 
-        public void Update(Payment entity)
+        public void Update(Payment payment)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Payment paymentToModify = GetEntity(payment.Id);
+
+                paymentToModify.CardNumber = payment.CardNumber;
+                paymentToModify.OwnerName = payment.OwnerName;
+                paymentToModify.Cvv = payment.Cvv;
+                paymentToModify.UpdatedDate = DateTime.Now;
+
+                context.Payment.Update(paymentToModify);
+            }
+            catch (Exception ex)
+            {
+                this.logger.LogError($"Error: {ex.Message}", ex.ToString());
+            }
         }
     }
 }
