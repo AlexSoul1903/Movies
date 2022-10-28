@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Movies.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,7 @@ namespace Movies.DAL.Context
 
 
 
-
+        public DbSet<Clients> Clients { get; set; }
 
 
 
