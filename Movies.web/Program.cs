@@ -1,4 +1,25 @@
+using Microsoft.EntityFrameworkCore;
+using Movies.DAL.Context;
+using Movies.DAL.Interfaces;
+using Movies.DAL.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//Context 
+builder.Services.AddDbContext<MoviesContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("MoviesContext")));
+
+
+
+//Repositories
+
+IServiceCollection services;
+
+
+builder.Services.AddScoped<IClientsRepository, ClientRepository>();
+
+
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
