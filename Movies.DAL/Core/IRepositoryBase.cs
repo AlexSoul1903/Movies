@@ -12,7 +12,6 @@ namespace Movies.DAL.Core
         void Save(TEntity entity);
         void Update(TEntity entity);
         void Remove(TEntity entity);
-        void Modify(TEntity entity);
 
         TEntity GetEntity(int entityid);
 
