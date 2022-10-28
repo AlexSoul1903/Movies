@@ -51,10 +51,7 @@ namespace Movies.DAL.Repositories
             context.Clients.Remove(client);
         }
 
-        public void RentMovies(Clients entity)
-        {
-            throw new NotImplementedException();
-        }
+      
 
         public void Save(Clients client)
         {
@@ -62,11 +59,7 @@ namespace Movies.DAL.Repositories
             context.SaveChanges();
         }
 
-        public void SellMovies(Clients entity)
-        {
-            throw new NotImplementedException();
-        }
-
+     
             public void Update(Clients clients)
             {
                 try
@@ -78,9 +71,7 @@ namespace Movies.DAL.Repositories
                     clientToModify.Age = clients.Age;
                     clientToModify.Email = clients.Email;
 
-                    //  context.Students.Update(studentToModify);
-
-                    context.Clients.Update(clients);
+                    context.Clients.Update(clientToModify);
                 }
                 catch (Exception ex)
                 {

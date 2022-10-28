@@ -15,8 +15,6 @@ namespace Movies.DAL.Core
         void Modify(TEntity entity);
 
         TEntity GetEntity(int entityid);
-        void SellMovies(TEntity entity);
-        void RentMovies(TEntity entity);
 
         bool Exists(Expression<Func<TEntity, bool>> filter);
 
