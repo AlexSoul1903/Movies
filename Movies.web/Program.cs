@@ -18,6 +18,7 @@ IServiceCollection services;
 
 builder.Services.AddScoped<IClientsRepository, ClientRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+builder.Services.AddScoped<IRentRepository, RentRepository>();
 
 
 
