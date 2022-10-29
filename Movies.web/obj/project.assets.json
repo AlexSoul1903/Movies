@@ -9787,19 +9787,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\krist\\.nuget\\packages\\": {}
+    "C:\\Users\\saryr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MyProjects\\Movies\\Movies.web\\Movies.web.csproj",
+      "projectUniqueName": "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.web\\Movies.web.csproj",
       "projectName": "Movies.web",
-      "projectPath": "C:\\MyProjects\\Movies\\Movies.web\\Movies.web.csproj",
-      "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-      "outputPath": "C:\\MyProjects\\Movies\\Movies.web\\obj\\",
+      "projectPath": "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.web\\Movies.web.csproj",
+      "packagesPath": "C:\\Users\\saryr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\krist\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\saryr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9813,8 +9813,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\MyProjects\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
-              "projectPath": "C:\\MyProjects\\Movies\\Movies.DAL\\Movies.DAL.csproj"
+            "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
+              "projectPath": "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.DAL\\Movies.DAL.csproj"
             }
           }
         }
@@ -9857,7 +9857,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
