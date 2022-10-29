@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2h9cfnqLF8T+rEnJGf18CPzNFLb3+4HIJOo6j8lmO492061PL1tUzfVGRwTr2z7+h1nLpftImxQuCbkhK5Kh3w==",
+  "dgSpecHash": "XdTrcnXwNDJK47YtaGJKVmjc0P2rJsgxISPgRV1IgYC51BUxw60M/moPhA7kBvXeFfA4sLnK+4K5tC4vE3/mJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.Service\\Movies.Service.csproj",
+  "projectFilePath": "C:\\MyProjects\\Movies\\Movies.Service\\Movies.Service.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
