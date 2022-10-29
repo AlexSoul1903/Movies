@@ -8,97 +8,97 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Movies.web
 build_property.RootNamespace = Movies.web
-build_property.ProjectDir = C:\Users\alexm\Source\Repos\AlexSoul1903\Movies3\Movies.web\
+build_property.ProjectDir = c:\Users\david\source\repos\Movies\Movies.web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\alexm\Source\Repos\AlexSoul1903\Movies3\Movies.web
+build_property.MSBuildProjectDirectory = c:\Users\david\source\repos\Movies\Movies.web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Access/Index.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Access/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Access/Register.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Access/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Clients/Create.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Clients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Clients/Delete.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Clients/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Clients/Details.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Clients/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Clients/Edit.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Clients/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Clients/Index.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Clients/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Home/Index.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Home/Privacy.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Movies/Create.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Movies/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Movies/Delete.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Movies/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Movies/Details.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Movies/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Movies/Edit.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Movies/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Movies/Index.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Movies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Payment/Index.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Payment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/RentMovies/Index.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/RentMovies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudE1vdmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Sales/Index.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Sales/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Shared/Error.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/_ViewImports.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/_ViewStart.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexm/Source/Repos/AlexSoul1903/Movies3/Movies.web/Views/Shared/_Layout.cshtml]
+[c:/Users/david/source/repos/Movies/Movies.web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jm9ua1ho2i
