@@ -22,7 +22,9 @@ builder.Services.AddScoped<IRentRepository, RentRepository>();
 builder.Services.AddScoped<ISaleInvoiceRepository, SaleInvoiceRepository>();
 builder.Services.AddScoped<IRentInvoiceRepository, RentInvoiceRepository>();
 
+builder.Services.AddScoped<ISalesRepository, SalesRepository>();
 
+builder.Services.AddScoped<IMoviesRepository, MovieRepository>();
 
 
 // Add services to the container.
