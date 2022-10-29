@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Movies.DAL.Interfaces;
 using Movies.web.Models;
 
 namespace Movies.web.Controllers
@@ -7,6 +8,12 @@ namespace Movies.web.Controllers
     public class SalesController : Controller
     {
         // GET: SalesController
+        private readonly ISalesRepository salesRepository;
+
+        public SalesController(ISalesRepository salesRepository)
+        {
+            this.salesRepository = salesRepository;
+        }
         public ActionResult Index()
         {
 
