@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "WERao8635tHuaw/Vpw+CwJ8Bj3VhdXLcQYJnEE4o5q8SwSHpd9zBJAE3NmtMAqu3eh4H7twbguS1xeVGKQ0Dcw==",
+  "dgSpecHash": "1BT62SkrJDdMp/sDinnUCmc6jJ/uTxYAi4YuN/Hu5XVdPMd3YO2mkrq7tjTYBvbBpnBdyDxX6S8JAPa+svacZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexm\\Source\\Repos\\AlexSoul1903\\Movies3\\Movies.Service\\Movies.Service.csproj",
+  "projectFilePath": "C:\\Users\\david\\source\\repos\\Movies\\Movies.Service\\Movies.Service.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\david\\source\\repos\\Movies\\Movies.Service\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
