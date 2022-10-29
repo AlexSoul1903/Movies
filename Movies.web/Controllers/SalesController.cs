@@ -8,12 +8,7 @@ namespace Movies.web.Controllers
     public class SalesController : Controller
     {
         // GET: SalesController
-        private readonly ISalesRepository salesRepository;
-
-        public SalesController(ISalesRepository salesRepository)
-        {
-            this.salesRepository = salesRepository;
-        }
+        
         public ActionResult Index()
         {
 
