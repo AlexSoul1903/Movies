@@ -34,10 +34,12 @@ namespace Movies.DAL.Context
 
         public DbSet<Clients> Clients { get; set; }
         public DbSet<Payment> Payment { get; set; }
+        public DbSet<Sales> Sale { get; set; }
         public DbSet<Rent> Rent { get; set; }
         public DbSet<SaleInvoice> SaleInvoice { get; set; }
         public DbSet<RentInvoice> RentInvoice { get; set; }
 
+        public DbSet<Movie> movie { get; set; }
 
         #endregion
     }
