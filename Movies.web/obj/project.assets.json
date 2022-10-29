@@ -9787,19 +9787,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\saryr\\.nuget\\packages\\": {}
+    "C:\\Users\\alexm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.web\\Movies.web.csproj",
+      "projectUniqueName": "C:\\Users\\alexm\\Source\\Repos\\AlexSoul1903\\Movies3\\Movies.web\\Movies.web.csproj",
       "projectName": "Movies.web",
-      "projectPath": "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.web\\Movies.web.csproj",
-      "packagesPath": "C:\\Users\\saryr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.web\\obj\\",
+      "projectPath": "C:\\Users\\alexm\\Source\\Repos\\AlexSoul1903\\Movies3\\Movies.web\\Movies.web.csproj",
+      "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alexm\\Source\\Repos\\AlexSoul1903\\Movies3\\Movies.web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\saryr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9813,8 +9813,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
-              "projectPath": "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.DAL\\Movies.DAL.csproj"
+            "C:\\Users\\alexm\\Source\\Repos\\AlexSoul1903\\Movies3\\Movies.DAL\\Movies.DAL.csproj": {
+              "projectPath": "C:\\Users\\alexm\\Source\\Repos\\AlexSoul1903\\Movies3\\Movies.DAL\\Movies.DAL.csproj"
             }
           }
         }

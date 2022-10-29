@@ -37,6 +37,7 @@ namespace Movies.DAL.Context
         public DbSet<Rent> Rent { get; set; }
         public DbSet<Sales> Sale { get; set; }
 
+        public DbSet<Movie> movie { get; set; }
 
         #endregion
     }

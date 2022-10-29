@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\saryr\\.nuget\\packages\\": {}
+    "C:\\Users\\alexm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.Service\\Movies.Service.csproj",
+      "projectUniqueName": "C:\\Users\\alexm\\Source\\Repos\\AlexSoul1903\\Movies3\\Movies.Service\\Movies.Service.csproj",
       "projectName": "Movies.Service",
-      "projectPath": "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.Service\\Movies.Service.csproj",
-      "packagesPath": "C:\\Users\\saryr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\saryr\\OneDrive\\Documentos\\Movies\\Movies.Service\\obj\\",
+      "projectPath": "C:\\Users\\alexm\\Source\\Repos\\AlexSoul1903\\Movies3\\Movies.Service\\Movies.Service.csproj",
+      "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alexm\\Source\\Repos\\AlexSoul1903\\Movies3\\Movies.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\saryr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

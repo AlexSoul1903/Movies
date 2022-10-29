@@ -21,6 +21,8 @@ builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 builder.Services.AddScoped<IRentRepository, RentRepository>();
 builder.Services.AddScoped<ISalesRepository, SalesRepository>();
 
+builder.Services.AddScoped<IMoviesRepository, MovieRepository>();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
