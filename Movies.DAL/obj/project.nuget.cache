@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HcVfvo1/7jgZAM5X8C7jUw0sBVTUX9nmnDYcWXlpbZCjFevzztvmfQUp1N41KZymzXxbYrT/Ewzabe7bVXVkWA==",
+  "dgSpecHash": "Lcfcn9VRHcxvLIV3HiNyFw28xJVKszEX8/D/QUDb/rSBZf1PQoI9PayJOXBRIDwyAFeFkapdbJkPYNcN/DveiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies4\\Movies\\Movies.DAL\\Movies.DAL.csproj",
+  "projectFilePath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies8\\Movies.DAL\\Movies.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexm\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\alexm\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
