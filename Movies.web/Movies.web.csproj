@@ -33,6 +33,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Movies.DAL\Movies.DAL.csproj" />
+    <ProjectReference Include="..\Movies.Service\Movies.Service.csproj" />
   </ItemGroup>
 
 </Project>

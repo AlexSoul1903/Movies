@@ -734,6 +734,20 @@
             "rid": "win"
           }
         }
+      },
+      "Movies.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Movies.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Movies.DAL.dll": {}
+        }
       }
     }
   },
@@ -1898,12 +1912,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Movies.DAL/1.0.0": {
+      "type": "project",
+      "path": "../Movies.DAL/Movies.DAL.csproj",
+      "msbuildProject": "../Movies.DAL/Movies.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 6.0.0",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
+      "Movies.DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1912,11 +1932,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies4\\Movies\\Movies.Service\\Movies.Service.csproj",
+      "projectUniqueName": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies8\\Movies.Service\\Movies.Service.csproj",
       "projectName": "Movies.Service",
-      "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies4\\Movies\\Movies.Service\\Movies.Service.csproj",
+      "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies8\\Movies.Service\\Movies.Service.csproj",
       "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies4\\Movies\\Movies.Service\\obj\\",
+      "outputPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies8\\Movies.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1932,7 +1952,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies8\\Movies.DAL\\Movies.DAL.csproj": {
+              "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies8\\Movies.DAL\\Movies.DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
