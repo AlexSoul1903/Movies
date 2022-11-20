@@ -9,9 +9,8 @@ namespace Movies.Service.Dtos
 {
    public class ClientUpdateDto:DtoClientBase
     {
-        public DateTime? UpdatedDate { get; set; }
-
-
+       
+       
 
     }
 }
