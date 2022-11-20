@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Movies.Service.Dtos
 {
-    public class PaymentRemoveDto : Core.DtoAudit
+    public class PaymentRemoveDto : Core.BaseDto
     {
         public DateTime DeletedDate { get; set; }
     }

@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Movies.Service.Core
 {
-    public class DtoAudit
+    public class RentInvoiceDto : InvoiceDto
     {
-        public int Id { get; set; }
-
+        public int? RentId { get; set; }
     }
 }
