@@ -1932,11 +1932,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies12\\Movies\\Movies.Service\\Movies.Service.csproj",
+      "projectUniqueName": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies13\\Movies\\Movies.Service\\Movies.Service.csproj",
       "projectName": "Movies.Service",
-      "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies12\\Movies\\Movies.Service\\Movies.Service.csproj",
+      "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies13\\Movies\\Movies.Service\\Movies.Service.csproj",
       "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies12\\Movies\\Movies.Service\\obj\\",
+      "outputPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies13\\Movies\\Movies.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1953,8 +1953,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies12\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
-              "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies12\\Movies\\Movies.DAL\\Movies.DAL.csproj"
+            "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies13\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
+              "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies13\\Movies\\Movies.DAL\\Movies.DAL.csproj"
             }
           }
         }

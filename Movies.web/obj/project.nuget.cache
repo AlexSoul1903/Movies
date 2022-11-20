@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9qpPoR2cAayPw8vVZa7jA0HVPW8KZi2UEb0kTOvr5E+9FHYUh+i68EShqBnRhXRK4oL7TYpjZqetB7g26X9ySA==",
+  "dgSpecHash": "8Jo5fmopUV25PCT+YHNm4VpGmu7axVQFbQARsfnT/eEedh6pOPvaOTBc9A1fAva/mwDRD97wDSIhrU3fzUSujA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies12\\Movies\\Movies.web\\Movies.web.csproj",
+  "projectFilePath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies13\\Movies\\Movies.web\\Movies.web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexm\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\alexm\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

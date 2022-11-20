@@ -11,6 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<MoviesContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("MoviesContext")));
 
+builder.Services.AddScoped(typeof(ILoggerService<>), typeof(LoggerService<>));
+
 //repositories
 builder.Services.AddScoped<IClientsRepository, ClientRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
@@ -22,11 +24,11 @@ builder.Services.AddScoped<IMoviesRepository, MovieRepository>();
 
 
 //Services
-builder.Services.AddScoped<IClientService, ClientService>();
-builder.Services.AddScoped<IPaymentService, PaymentService>();
-builder.Services.AddScoped<IMovieService, MovieService>();
-builder.Services.AddScoped<ISaleInvoiceService, SaleInvoiceService>();
-builder.Services.AddScoped<IRentInvoiceService, RentInvoiceService>();
+builder.Services.AddTransient<IClientService, ClientService>();
+builder.Services.AddTransient<IPaymentService, PaymentService>();
+builder.Services.AddTransient<IMovieService, MovieService>();
+builder.Services.AddTransient<ISaleInvoiceService, SaleInvoiceService>();
+builder.Services.AddTransient<IRentInvoiceService, RentInvoiceService>();
 
 
 // Add services to the container.
