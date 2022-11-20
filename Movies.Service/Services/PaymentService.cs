@@ -17,9 +17,9 @@ namespace Movies.Service.Services
     public class PaymentService : IPaymentService
     {
         private readonly IPaymentRepository paymentRepository;
-        private readonly ILogger<PaymentService> logger;
+        private readonly ILoggerService<PaymentService> logger;
 
-        public PaymentService(IPaymentRepository paymentRepository, ILogger<PaymentService>logger)
+        public PaymentService(IPaymentRepository paymentRepository, ILoggerService<PaymentService>logger)
         {
             this.paymentRepository = paymentRepository;
             this.logger = logger;
@@ -125,9 +125,9 @@ namespace Movies.Service.Services
 
                 PaymentSaveResponse payment = new PaymentSaveResponse();
 
-                DAL.Entities.Payment paymentToRemove = paymentRepository.GetEntity(paymentRemoveDto.Id);
+                DAL.Entities.Payment paymentToRemove = paymentRepository.GetEntity((int)paymentRemoveDto.Id);
 
-                paymentToRemove.Id = paymentRemoveDto.Id;
+                paymentToRemove.Id = (int)paymentRemoveDto.Id;
                 paymentToRemove.DeletedDate = DateTime.Now;
 
                 paymentRepository.Remove(paymentToRemove);
@@ -171,7 +171,7 @@ namespace Movies.Service.Services
 
                     DAL.Entities.Payment PaymentToAdd = new DAL.Entities.Payment()
                     {
-                        Id = paymentSaveDto.Id,
+                        Id = (int)paymentSaveDto.Id,
                         CardNumber= paymentSaveDto.CardNumber,
                         OwnerName = paymentSaveDto.OwnerName,
                         CreationDate = DateTime.Now,
@@ -221,7 +221,7 @@ namespace Movies.Service.Services
                 {
 
 
-                    DAL.Entities.Payment paymentToUpdate = paymentRepository.GetEntity(paymentUpdateDto.Id); 
+                    DAL.Entities.Payment paymentToUpdate = paymentRepository.GetEntity((int)paymentUpdateDto.Id); 
 
                     paymentToUpdate.CardNumber = paymentUpdateDto.CardNumber;
                     paymentToUpdate.OwnerName = paymentUpdateDto.OwnerName;
