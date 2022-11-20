@@ -29,7 +29,7 @@ builder.Services.AddScoped<IMoviesRepository, MovieRepository>();
 
 //Services
 builder.Services.AddScoped<IClientService, ClientService>();
-
+builder.Services.AddScoped<IPaymentService, PaymentService>();
 
 
 

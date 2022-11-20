@@ -2805,3 +2805,5 @@ C:\Users\alexm\source\repos\AlexSoul1903\Movies8\Movies.web\obj\Debug\net6.0\Mov
 C:\Users\alexm\source\repos\AlexSoul1903\Movies8\Movies.web\obj\Debug\net6.0\ref\Movies.web.dll
 C:\Users\alexm\source\repos\AlexSoul1903\Movies8\Movies.web\bin\Debug\net6.0\Movies.Service.dll
 C:\Users\alexm\source\repos\AlexSoul1903\Movies8\Movies.web\bin\Debug\net6.0\Movies.Service.pdb
+C:\Users\ferli\Source\Repos\Movies\Movies.web\bin\Debug\net6.0\Movies.Service.dll
+C:\Users\ferli\Source\Repos\Movies\Movies.web\bin\Debug\net6.0\Movies.Service.pdb
