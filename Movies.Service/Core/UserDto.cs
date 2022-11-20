@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Movies.Service.Core
 {
-    public class UserDto: DtoAudit
+    public class UserDto: BaseDto
     {
         public string Email { get; set; }
         public string Password { get; set; }

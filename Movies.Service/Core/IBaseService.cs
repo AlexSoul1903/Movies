@@ -10,7 +10,7 @@ namespace Movies.Service.Core
     {
 
         ServiceResult GetAll();
-    ServiceResult GetById(int Id);
+        ServiceResult GetById(int Id);
 
 
     }
