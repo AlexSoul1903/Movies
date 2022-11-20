@@ -11,7 +11,7 @@ namespace Movies.Service.Dtos
     {
 
       
-        public DateTime CreationDate { get; set; }
+  
 
     }
 }

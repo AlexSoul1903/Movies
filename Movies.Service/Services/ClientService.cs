@@ -86,7 +86,7 @@ namespace Movies.Service.Services
             catch (Exception ex)
             {
                 result.Success = false;
-                result.Message = "Error getting the student Id.";
+                result.Message = "Error getting the client Id.";
                 this.logger.LogError(result.Message, ex.ToString());
             }
             return result;
@@ -184,7 +184,7 @@ namespace Movies.Service.Services
 
                         DAL.Entities.Clients ClientToAdd = new DAL.Entities.Clients()
                         {
-                            Id= clientSaveDto.Id,
+                            Id= (int)clientSaveDto.Id,
                             LastName = clientSaveDto.LastName,
                             Name = clientSaveDto.Name,
                             CreationDate = DateTime.Now,
@@ -236,7 +236,7 @@ namespace Movies.Service.Services
                 {
 
                    
-                        DAL.Entities.Clients clientToUpdate = clientsRepository.GetEntity(clientUpdateDto.Id); // Se busca el estudiante a actualizar //
+                        DAL.Entities.Clients clientToUpdate = clientsRepository.GetEntity((int)clientUpdateDto.Id);
 
                     clientToUpdate.Name = clientUpdateDto.Name;
                        clientToUpdate.LastName = clientUpdateDto.LastName;
