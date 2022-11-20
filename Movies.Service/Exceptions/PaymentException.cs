@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Movies.Service.Exceptions
 {
-    public class PaymentException
+    public class PaymentException : Exception
     {
+        public PaymentException(string Message) : base(Message)
+        {
+
+        }
     }
 }
