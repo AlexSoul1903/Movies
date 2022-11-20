@@ -2831,3 +2831,14 @@ C:\Users\david\source\repos\Movies\Movies.web\bin\Debug\net6.0\Movies.DAL.dll
 C:\Users\david\source\repos\Movies\Movies.web\bin\Debug\net6.0\Movies.Service.dll
 C:\Users\david\source\repos\Movies\Movies.web\bin\Debug\net6.0\Movies.DAL.pdb
 C:\Users\david\source\repos\Movies\Movies.web\bin\Debug\net6.0\Movies.Service.pdb
+C:\Users\alexm\source\repos\AlexSoul1903\Movies12\Movies\Movies.web\obj\Debug\net6.0\Movies.web.csproj.AssemblyReference.cache
+C:\Users\alexm\source\repos\AlexSoul1903\Movies12\Movies\Movies.web\obj\Debug\net6.0\Movies.web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexm\source\repos\AlexSoul1903\Movies12\Movies\Movies.web\obj\Debug\net6.0\Movies.web.AssemblyInfoInputs.cache
+C:\Users\alexm\source\repos\AlexSoul1903\Movies12\Movies\Movies.web\obj\Debug\net6.0\Movies.web.AssemblyInfo.cs
+C:\Users\alexm\source\repos\AlexSoul1903\Movies12\Movies\Movies.web\obj\Debug\net6.0\Movies.web.csproj.CoreCompileInputs.cache
+C:\Users\alexm\source\repos\AlexSoul1903\Movies12\Movies\Movies.web\obj\Debug\net6.0\Movies.web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\alexm\source\repos\AlexSoul1903\Movies12\Movies\Movies.web\obj\Debug\net6.0\Movies.web.RazorAssemblyInfo.cache
+C:\Users\alexm\source\repos\AlexSoul1903\Movies12\Movies\Movies.web\obj\Debug\net6.0\Movies.web.RazorAssemblyInfo.cs
+C:\Users\alexm\source\repos\AlexSoul1903\Movies12\Movies\Movies.web\obj\Debug\net6.0\Movies.web.dll
+C:\Users\alexm\source\repos\AlexSoul1903\Movies12\Movies\Movies.web\obj\Debug\net6.0\refint\Movies.web.dll
+C:\Users\alexm\source\repos\AlexSoul1903\Movies12\Movies\Movies.web\obj\Debug\net6.0\Movies.web.pdb
