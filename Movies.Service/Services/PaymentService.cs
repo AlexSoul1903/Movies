@@ -169,6 +169,13 @@ namespace Movies.Service.Services
                         return result;
                     }
 
+                    if (paymentSaveDto.Id == null)
+                    {
+                        result.Success = false;
+                        result.Message = "An Id must be provided in order to update a client";
+                        return result;
+                    }
+
                     DAL.Entities.Payment PaymentToAdd = new DAL.Entities.Payment()
                     {
                         Id = (int)paymentSaveDto.Id,

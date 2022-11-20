@@ -11,12 +11,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<MoviesContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("MoviesContext")));
 
-
-
-//Repositories
-
-IServiceCollection services;
-
 //repositories
 builder.Services.AddScoped<IClientsRepository, ClientRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
