@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\source\\repos\\Movies\\Movies.web\\Movies.web.csproj": {}
+    "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.web\\Movies.web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\source\\repos\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
+    "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\source\\repos\\Movies\\Movies.DAL\\Movies.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.DAL\\Movies.DAL.csproj",
         "projectName": "Movies.DAL",
-        "projectPath": "C:\\Users\\david\\source\\repos\\Movies\\Movies.DAL\\Movies.DAL.csproj",
-        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\source\\repos\\Movies\\Movies.DAL\\obj\\",
+        "projectPath": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.DAL\\Movies.DAL.csproj",
+        "packagesPath": "C:\\Users\\ferli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ferli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -59,8 +59,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -69,24 +68,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\david\\source\\repos\\Movies\\Movies.Service\\Movies.Service.csproj": {
+    "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.Service\\Movies.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\source\\repos\\Movies\\Movies.Service\\Movies.Service.csproj",
+        "projectUniqueName": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.Service\\Movies.Service.csproj",
         "projectName": "Movies.Service",
-        "projectPath": "C:\\Users\\david\\source\\repos\\Movies\\Movies.Service\\Movies.Service.csproj",
-        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\source\\repos\\Movies\\Movies.Service\\obj\\",
+        "projectPath": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.Service\\Movies.Service.csproj",
+        "packagesPath": "C:\\Users\\ferli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ferli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -101,8 +100,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\david\\source\\repos\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
-                "projectPath": "C:\\Users\\david\\source\\repos\\Movies\\Movies.DAL\\Movies.DAL.csproj"
+              "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
+                "projectPath": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.DAL\\Movies.DAL.csproj"
               }
             }
           }
@@ -132,8 +131,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -142,24 +140,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\david\\source\\repos\\Movies\\Movies.web\\Movies.web.csproj": {
+    "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.web\\Movies.web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\source\\repos\\Movies\\Movies.web\\Movies.web.csproj",
+        "projectUniqueName": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.web\\Movies.web.csproj",
         "projectName": "Movies.web",
-        "projectPath": "C:\\Users\\david\\source\\repos\\Movies\\Movies.web\\Movies.web.csproj",
-        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\source\\repos\\Movies\\Movies.web\\obj\\",
+        "projectPath": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.web\\Movies.web.csproj",
+        "packagesPath": "C:\\Users\\ferli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ferli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -174,11 +172,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\david\\source\\repos\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
-                "projectPath": "C:\\Users\\david\\source\\repos\\Movies\\Movies.DAL\\Movies.DAL.csproj"
+              "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
+                "projectPath": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.DAL\\Movies.DAL.csproj"
               },
-              "C:\\Users\\david\\source\\repos\\Movies\\Movies.Service\\Movies.Service.csproj": {
-                "projectPath": "C:\\Users\\david\\source\\repos\\Movies\\Movies.Service\\Movies.Service.csproj"
+              "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.Service\\Movies.Service.csproj": {
+                "projectPath": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.Service\\Movies.Service.csproj"
               }
             }
           }
@@ -208,8 +206,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -221,7 +218,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
