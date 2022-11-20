@@ -30,7 +30,9 @@ builder.Services.AddScoped<IMoviesRepository, MovieRepository>();
 //Services
 builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
-
+builder.Services.AddScoped<IMovieService, MovieService>();
+builder.Services.AddScoped<ISaleInvoiceService, SaleInvoiceService>();
+builder.Services.AddScoped<IRentInvoiceService, RentInvoiceService>();
 
 
 // Add services to the container.
