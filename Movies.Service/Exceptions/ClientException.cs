@@ -3,7 +3,7 @@
 
 namespace Movies.Service.Exceptions
 {
-public  class ClientException
+public  class ClientException:Exception
     {
 
 

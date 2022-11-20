@@ -86,7 +86,7 @@ namespace Movies.Service.Services
             catch (Exception ex)
             {
                 result.Success = false;
-                result.Message = "Error getting the student Id.";
+                result.Message = "Error getting the client Id.";
                 this.logger.LogError(result.Message, ex.ToString());
             }
             return result;

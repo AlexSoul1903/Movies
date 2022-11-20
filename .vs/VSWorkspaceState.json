@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Movies.Service",
+    "\\Movies.Service\\Services",
+    "\\Movies.web"
   ],
   "SelectedNode": "\\Movies.sln",
   "PreviewInSolutionExplorer": false
