@@ -184,7 +184,6 @@ namespace Movies.Service.Services
 
                         DAL.Entities.Clients ClientToAdd = new DAL.Entities.Clients()
                         {
-                            Id= clientSaveDto.Id,
                             LastName = clientSaveDto.LastName,
                             Name = clientSaveDto.Name,
                             CreationDate = DateTime.Now,
@@ -235,8 +234,14 @@ namespace Movies.Service.Services
                 if (resultIsValid.Success)
                 {
 
-                   
-                        DAL.Entities.Clients clientToUpdate = clientsRepository.GetEntity(clientUpdateDto.Id); // Se busca el estudiante a actualizar //
+                   if (clientUpdateDto.Id == null)
+                    {
+                        result.Success = false;
+                        result.Message = "An Id must be provided in order to update a client";
+                        return result;
+                    }
+
+                        DAL.Entities.Clients clientToUpdate = clientsRepository.GetEntity((int)clientUpdateDto.Id); // Se busca el estudiante a actualizar //
 
                     clientToUpdate.Name = clientUpdateDto.Name;
                        clientToUpdate.LastName = clientUpdateDto.LastName;

@@ -16,11 +16,11 @@ namespace Movies.Service.Services
 {
     public class RentInvoiceService : IRentInvoiceService
     {
-        private readonly ISaleInvoiceRepository rentInvoiceRepository;
+        private readonly IRentInvoiceRepository rentInvoiceRepository;
         private readonly IPaymentRepository paymentRepository;
         private readonly ILoggerService<RentInvoiceService> logger;
 
-        public RentInvoiceService(ISaleInvoiceRepository rentInvoiceRepository, IPaymentRepository paymentRepository, ILoggerService<RentInvoiceService> logger)
+        public RentInvoiceService(IRentInvoiceRepository rentInvoiceRepository, IPaymentRepository paymentRepository, ILoggerService<RentInvoiceService> logger)
         {
             this.rentInvoiceRepository = rentInvoiceRepository;
             this.paymentRepository = paymentRepository;
