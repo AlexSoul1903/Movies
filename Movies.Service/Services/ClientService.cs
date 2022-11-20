@@ -18,9 +18,9 @@ namespace Movies.Service.Services
     public class ClientService : IClientService
     {
         private readonly IClientsRepository clientsRepository;
-        private readonly ILogger<ClientService> logger;
+        private readonly ILoggerService<ClientService> logger;
 
-        public ClientService(IClientsRepository clientsRepository, ILogger<ClientService> logger)
+        public ClientService(IClientsRepository clientsRepository, ILoggerService<ClientService> logger)
         {
 
             this.clientsRepository = clientsRepository;
