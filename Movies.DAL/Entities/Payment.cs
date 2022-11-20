@@ -11,7 +11,7 @@ namespace Movies.DAL.Entities
        
         public int CardNumber { get; set; }
         public string OwnerName { get; set; }
-        public DateOnly ExpirationDate { get; set; }
+        public DateTime ExpirationDate { get; set; }
         public int Cvv { get; set; }
 
 
