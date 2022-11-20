@@ -1,0 +1,18 @@
+﻿using Movies.Service.Core;
+using Movies.Service.Dtos;
+using Movies.Service.Responses;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Movies.Service.Contracts
+{
+    public interface ISaleInvoiceService : IBaseService
+    {
+        public SaleInvoiceSaveResponse Save(SaleInvoiceSaveDto dto);
+        public SaleInvoiceUpdateResponse Update (SaleInvoiceUpdateDto dto);
+        public SaleInvoiceDeleteResponse Remove (SaleInvoiceRemoveDto dto);
+    }
+}

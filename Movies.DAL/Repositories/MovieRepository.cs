@@ -77,13 +77,13 @@ namespace Movies.DAL.Repositories
 
                 movieToModify.Name = entity.Name;
                 movieToModify.Rating = entity.Rating;
-                movieToModify.RelaseDate = entity.RelaseDate;
+                movieToModify.ReleaseDate = entity.ReleaseDate;
                 movieToModify.FrontPage = entity.FrontPage;
                 movieToModify.Duration = entity.Duration;
                 movieToModify.Genre = entity.Genre;
                 movieToModify.RentPrice = entity.RentPrice;
                 movieToModify.SalePrice = entity.SalePrice;
-                movieToModify.RelaseDate = entity.RelaseDate;
+                movieToModify.ReleaseDate = entity.ReleaseDate;
                 movieToModify.Director = entity.Director;
                
                 movieToModify.UpdatedDate = DateTime.Now;
