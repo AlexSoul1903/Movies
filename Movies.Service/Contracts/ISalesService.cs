@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Movies.Service.Contracts
 {
-    internal interface ISalesService : IBaseService
+    public interface ISalesService : IBaseService
     {
         SalesBuyResponse BuyMovie(SaleBuyDto saleBuyDto);
         ServiceResult GetSale(SaleDto saleDto);
