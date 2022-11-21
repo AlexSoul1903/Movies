@@ -29,7 +29,7 @@ builder.Services.AddTransient<IPaymentService, PaymentService>();
 builder.Services.AddTransient<IMovieService, MovieService>();
 builder.Services.AddTransient<ISaleInvoiceService, SaleInvoiceService>();
 builder.Services.AddTransient<IRentInvoiceService, RentInvoiceService>();
-
+builder.Services.AddTransient<ISalesService,SalesService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
