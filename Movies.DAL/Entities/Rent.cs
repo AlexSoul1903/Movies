@@ -10,6 +10,8 @@ namespace Movies.DAL.Entities
     {
         public int ID { get; set; }
         public int ClientID { get; set; }
+        public int ClientId { get; set; }
+        public int MovieID { get; set; }
         public double RentPrice{ get; set; }
         public DateTime RentDate{ get; set; }
         public DateTime ExpirationDate{ get; set; }
