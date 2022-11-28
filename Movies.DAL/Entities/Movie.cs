@@ -16,7 +16,7 @@ namespace Movies.DAL.Entities
         public string Rating { get; set; }
         public string Director { get; set; }
         public string Duration { get; set; }
-        public DateOnly ReleaseDate { get; set; }
+        public DateTime ReleaseDate { get; set; }
         public double? SalePrice { get; set; }
         public double? RentPrice { get; set; }
 

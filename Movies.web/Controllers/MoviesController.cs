@@ -20,7 +20,7 @@ namespace Movies.web.Controllers
                  FrontPage = "Images/Avenger.jpg",
                   Genre ="Action",
                   Duration="2h 29m",
-                  RelaseDate= new DateOnly(2018, 4, 12),
+                  RelaseDate= new DateTime(2018, 4, 12),
                   Rating="PG-13",
                   RentPrice=70,
                   SalePrice=150
@@ -34,7 +34,7 @@ namespace Movies.web.Controllers
                  FrontPage="Images/Sherk.jpg",
                  Genre="Comedy",
                  Duration="1h 30m",
-                 RelaseDate= new DateOnly(2001, 4, 12),
+                 RelaseDate= new DateTime(2001, 4, 12),
                  Rating="PG-MPAA",
                  RentPrice=40,
                  SalePrice=120
@@ -48,7 +48,7 @@ namespace Movies.web.Controllers
                   FrontPage="Images/Harry Potter.jpg",
                   Genre="Fiction",
                   Duration="2h 32m",
-                  RelaseDate= new DateOnly(2001, 11, 14),
+                  RelaseDate= new DateTime(2001, 11, 14),
                   Rating="PG-MPAA",
                   RentPrice=50,
                   SalePrice=130
@@ -63,7 +63,7 @@ namespace Movies.web.Controllers
                   FrontPage="Images/Kimetsu.jpg",
                   Genre="Fiction",
                   Duration="1h 57m",
-                  RelaseDate= new DateOnly(2020, 10, 16),
+                  RelaseDate= new DateTime(2020, 10, 16),
                   Rating="PG-MPAA",
                   RentPrice=45,
                   SalePrice=130
@@ -79,7 +79,7 @@ namespace Movies.web.Controllers
                   FrontPage="Images/Pitufos 2.jpg",
                   Genre="Comedy",
                   Duration="1h 45m",
-                  RelaseDate= new DateOnly(2013, 7, 28),
+                  RelaseDate= new DateTime(2013, 7, 28),
                   Rating="PG-MPAA",
                   RentPrice=45,
                   SalePrice=130
@@ -95,7 +95,7 @@ namespace Movies.web.Controllers
                   FrontPage="Images/Titanic.jpg",
                   Genre="Romance/Drama",
                   Duration="3h 14m",
-                  RelaseDate= new DateOnly(1997, 12, 19),
+                  RelaseDate= new DateTime(1997, 12, 19),
                   Rating="PG-MPAA",
                   RentPrice=50,
                   SalePrice=115

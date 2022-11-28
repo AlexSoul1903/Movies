@@ -43,12 +43,14 @@ namespace Movies.DAL.Repositories
         {
             rent.DeletedDate = DateTime.Now;
             context.Rent.Remove(rent);
+            context.SaveChanges();
         }
 
         public void Save(Rent rent)
         {
             context.Rent.Add(rent);
             context.SaveChanges();
+
         }
 
         public void Update(Rent rent)
@@ -57,7 +59,7 @@ namespace Movies.DAL.Repositories
             {
                 Rent rentToModify = GetEntity(rent.Id);
 
-                rentToModify.ID = rent.ID;
+                rentToModify.Id = rent.Id;
                 rentToModify.ClientID = rent.ClientID;
                 rentToModify.RentPrice = rent.RentPrice;
                 rentToModify.RentDate = rent.RentDate;
@@ -65,6 +67,7 @@ namespace Movies.DAL.Repositories
                 rentToModify.UpdatedDate = DateTime.Now;
 
                 context.Rent.Update(rentToModify);
+                context.SaveChanges();
             }
             catch (Exception ex)
             {
