@@ -39,6 +39,7 @@ namespace Movies.DAL.Repositories
         {
             rentInvoice.DeletedDate = DateTime.Now;
             context.RentInvoice.Remove(rentInvoice);
+            context.SaveChanges();
         }
 
         public void Save(RentInvoice rentInvoice)
@@ -56,6 +57,7 @@ namespace Movies.DAL.Repositories
                 rentInvoiceToModify.UpdatedDate = DateTime.Now;
 
                 context.RentInvoice.Update(rentInvoiceToModify);
+                context.SaveChanges();
             }
             catch (Exception ex)
             {
