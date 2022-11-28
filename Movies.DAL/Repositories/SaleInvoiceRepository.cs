@@ -25,6 +25,7 @@ namespace Movies.DAL.Repositories
         public bool Exists(Expression<Func<SaleInvoice, bool>> filter)
         {
             return context.SaleInvoice.Any(filter);
+
         }
 
         public IEnumerable<SaleInvoice> GetEntities()
@@ -41,6 +42,7 @@ namespace Movies.DAL.Repositories
         {
             saleInvoice.DeletedDate = DateTime.Now;
             context.SaleInvoice.Remove(saleInvoice);
+            context.SaveChanges();
         }
 
         public void Save(SaleInvoice saleInvoice)
@@ -58,6 +60,7 @@ namespace Movies.DAL.Repositories
                 saleInvoiceToModify.UpdatedDate = DateTime.Now;
 
                 context.SaleInvoice.Update(saleInvoiceToModify);
+                context.SaveChanges();
             }
             catch (Exception ex)
             {

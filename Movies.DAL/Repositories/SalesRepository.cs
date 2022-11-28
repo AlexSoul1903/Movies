@@ -46,6 +46,7 @@ namespace Movies.DAL.Repositories
         {
             sales.DeletedDate = DateTime.Now;
             context.Sale.Remove(sales);
+            context.SaveChanges();
         }
 
         public void Save(Sales sales)
@@ -65,7 +66,8 @@ namespace Movies.DAL.Repositories
                 salesToModify.SalePrice = sales.SalePrice;
                 salesToModify.SaleDate = sales.SaleDate;
 
-                context.Sale.Add(salesToModify);   
+                context.Sale.Add(salesToModify);
+                context.SaveChanges();
 
             }
             catch (Exception ex)
