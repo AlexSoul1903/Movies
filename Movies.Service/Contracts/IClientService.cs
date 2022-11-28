@@ -1,4 +1,5 @@
 ﻿
+using Movies.DAL.Entities;
 using Movies.Service.Core;
 using Movies.Service.Dtos;
 using Movies.Service.Responses;

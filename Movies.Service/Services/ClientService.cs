@@ -13,6 +13,7 @@ using Movies.Service.Exceptions;
 using Movies.Service.Models;
 using Movies.Service.Validations;
 
+
 namespace Movies.Service.Services
 {
     public class ClientService : IClientService
@@ -173,7 +174,7 @@ namespace Movies.Service.Services
                 if (resutlIsValid.Success)
                 {
 
-                    // Verificar si el estudiante esta registrado //
+                    
                     if (clientsRepository.Exists(st => st.Name == clientSaveDto.Name && st.LastName == clientSaveDto.LastName))
                         {
 
@@ -223,45 +224,56 @@ namespace Movies.Service.Services
         ClientUpdateResponse IClientService.UpdateClient(ClientUpdateDto clientUpdateDto)
         {
 
-           ClientUpdateResponse result = new ClientUpdateResponse();
+
+
+            ClientUpdateResponse result = new ClientUpdateResponse();
 
             try
             {
-           
 
                 var resultIsValid = ValidationsClient.IsValidClient(clientUpdateDto);
 
                 if (resultIsValid.Success)
                 {
 
-                   if (clientUpdateDto.Id == null)
+                    if (clientUpdateDto.Id == null)
                     {
                         result.Success = false;
                         result.Message = "An Id must be provided in order to update a client";
                         return result;
                     }
 
-                        DAL.Entities.Clients clientToUpdate = clientsRepository.GetEntity((int)clientUpdateDto.Id); // Se busca el estudiante a actualizar //
 
+
+                    ClientUpdateResponse client = new ClientUpdateResponse();
+
+                    DAL.Entities.Clients clientToUpdate = clientsRepository.GetEntity(clientUpdateDto.Id);
+
+                    clientToUpdate.Id = clientUpdateDto.Id;
                     clientToUpdate.Name = clientUpdateDto.Name;
-                       clientToUpdate.LastName = clientUpdateDto.LastName;
-                    clientToUpdate.Password = clientUpdateDto.Password;
-                    clientToUpdate.PaymentMethodId = clientUpdateDto.PaymentMethodId;
+                    clientToUpdate.LastName = clientUpdateDto.LastName;
+                    clientToUpdate.Age = clientUpdateDto.Age;
+                    clientToUpdate.Email = clientUpdateDto.Email;
                     clientToUpdate.UpdatedDate = DateTime.Now;
+
+
+
+
+
                     clientsRepository.Update(clientToUpdate);
 
-                        result.Message = "Client updated successfully";
-                    }
-                   
+                    result.Message = "Client updated successfully";
+                }
+            
 
-    
                 else
                 {
                     result.Success = false;
                     result.Message = resultIsValid.Message;
                 }
 
-            }
+                }
+            
             catch (Exception ex)
             {
                 result.Success = false;
@@ -275,5 +287,16 @@ namespace Movies.Service.Services
 
 
         }
+
+
+
+
+
     }
-}
+           
+      
+
+
+
+        }
+    
