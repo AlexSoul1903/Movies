@@ -9813,11 +9813,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.web\\Movies.web.csproj",
+      "projectUniqueName": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.web\\Movies.web.csproj",
       "projectName": "Movies.web",
-      "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.web\\Movies.web.csproj",
+      "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.web\\Movies.web.csproj",
       "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.web\\obj\\",
+      "outputPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9834,11 +9834,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
-              "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.DAL\\Movies.DAL.csproj"
+            "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
+              "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.DAL\\Movies.DAL.csproj"
             },
-            "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.Service\\Movies.Service.csproj": {
-              "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.Service\\Movies.Service.csproj"
+            "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.Service\\Movies.Service.csproj": {
+              "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.Service\\Movies.Service.csproj"
             }
           }
         }

@@ -8,7 +8,7 @@ namespace Movies.DAL.Entities
 {
     public class Rent : Core.BaseEntity
     {
-        public int ID { get; set; }
+     
         public int ClientID { get; set; }
         public int ClientId { get; set; }
         public int MovieID { get; set; }

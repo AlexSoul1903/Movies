@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iaD7NDcYApcYePWuhLutxtwpLYwFZAXDIqNgLvu9nYQDPHZuSz//jU2u2sQTGS8aYg3nfwW0VCS+GMpZd1zIqQ==",
+  "dgSpecHash": "e/15kbx6Hvi3nOjTx3y7MfvniVtbzbleEhJwBMExgfJSGBT70LBkTPgIZNydGCfC0Z0r4+Bddbr+x/Bi0blhNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.Api\\Movies.Api.csproj",
+  "projectFilePath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.Api\\Movies.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexm\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\alexm\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

@@ -46,7 +46,7 @@ namespace Movies.DAL.Repositories
         {
             client.DeletedDate = DateTime.Now;
             context.Clients.Remove(client);
-        
+            context.SaveChanges();
         }
 
       
@@ -65,22 +65,26 @@ namespace Movies.DAL.Repositories
                 {
                     Clients clientToModify = GetEntity(clients.Id);
 
+                clientToModify.Id = clients.Id;
                     clientToModify.Name = clients.Name;
                     clientToModify.LastName = clients.LastName;
                     clientToModify.Age = clients.Age;
-                    clientToModify.Email = clients.Email;
+                clientToModify.Email = clients.Email;
                 clientToModify.UpdatedDate = DateTime.Now;
-
-                    context.Clients.Update(clientToModify);
-                }
+             
+                    this.context.Clients.Update(clientToModify);
+                this.context.SaveChanges();
+            }
                 catch (Exception ex)
                 {
                     this.logger.LogError($"Error: {ex.Message}", ex.ToString());
+                Console.WriteLine(ex.Message);
+          
                 }
+           
 
 
-
-            }
+        }
         }
     }
 

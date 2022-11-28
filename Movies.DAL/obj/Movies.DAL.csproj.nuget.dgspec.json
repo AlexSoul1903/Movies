@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.DAL\\Movies.DAL.csproj": {}
+    "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.DAL\\Movies.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
+    "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.DAL\\Movies.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.DAL\\Movies.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.DAL\\Movies.DAL.csproj",
         "projectName": "Movies.DAL",
-        "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.DAL\\Movies.DAL.csproj",
+        "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.DAL\\Movies.DAL.csproj",
         "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies9\\Movies14\\AlexSoul1903\\Movies\\Movies.DAL\\obj\\",
+        "outputPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",

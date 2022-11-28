@@ -8,7 +8,7 @@ namespace Movies.Service.Dtos
 {
     public class SaleBuyDto: Core.SaleDto
     {
-        public DateOnly SaleDate { get; set; }
+        public DateTime SaleDate { get; set; }
         public int MovieId { get; set; }
         public double SalePrice { get; set; }
     }
