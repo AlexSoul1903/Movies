@@ -39,6 +39,7 @@ namespace Movies.DAL.Repositories
         {
             payment.DeletedDate = DateTime.Now;
             context.Payment.Remove(payment);
+            context.SaveChanges();
         }
 
         public void Save(Payment payment)
@@ -59,6 +60,7 @@ namespace Movies.DAL.Repositories
                 paymentToModify.UpdatedDate = DateTime.Now;
 
                 context.Payment.Update(paymentToModify);
+                context.SaveChanges();
             }
             catch (Exception ex)
             {

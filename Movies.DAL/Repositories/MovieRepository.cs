@@ -54,7 +54,7 @@ namespace Movies.DAL.Repositories
 
             entity.DeletedDate = DateTime.Now;
             context.movie.Remove(entity);
-
+            context.SaveChanges();
 
         }
 
@@ -64,6 +64,7 @@ namespace Movies.DAL.Repositories
 
             context.movie.Add(entity);
             context.SaveChanges();
+
 
 
         }
@@ -89,6 +90,7 @@ namespace Movies.DAL.Repositories
                 movieToModify.UpdatedDate = DateTime.Now;
 
                 context.movie.Update(movieToModify);
+                context.SaveChanges();
             }
             catch (Exception ex)
             {
