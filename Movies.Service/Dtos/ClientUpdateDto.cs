@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Movies.Service.Dtos
 {
-   public class ClientUpdateDto:Core.DtoClientBase
+   public class ClientUpdateDto
     {
 
         public int Id { get; set; }

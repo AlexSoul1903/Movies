@@ -1,11 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Movies.DAL",
-    "\\Movies.DAL\\Core",
-    "\\Movies.Service",
-    "\\Movies.Service\\Core"
+    ""
   ],
-  "SelectedNode": "\\Movies.sln",
   "PreviewInSolutionExplorer": false
 }
