@@ -228,22 +228,7 @@ namespace Movies.Service.Services
 
             ClientUpdateResponse result = new ClientUpdateResponse();
 
-            try
-            {
-
-                var resultIsValid = ValidationsClient.IsValidClient(clientUpdateDto);
-
-                if (resultIsValid.Success)
-                {
-
-                    if (clientUpdateDto.Id == null)
-                    {
-                        result.Success = false;
-                        result.Message = "An Id must be provided in order to update a client";
-                        return result;
-                    }
-
-
+           
 
                     ClientUpdateResponse client = new ClientUpdateResponse();
 
@@ -263,23 +248,9 @@ namespace Movies.Service.Services
                     clientsRepository.Update(clientToUpdate);
 
                     result.Message = "Client updated successfully";
-                }
+                
             
 
-                else
-                {
-                    result.Success = false;
-                    result.Message = resultIsValid.Message;
-                }
-
-                }
-            
-            catch (Exception ex)
-            {
-                result.Success = false;
-                result.Message = "Error updating the client";
-                this.logger.LogError($" {result.Message} {ex.Message}", ex.ToString());
-            }
 
             return result;
 
