@@ -61,7 +61,7 @@ namespace Movies.web.Controllers
 
                 Service.Dtos.ClientSaveDto saveClientDto = new Service.Dtos.ClientSaveDto()
                 {
-
+                    
                     Age = clientModel.Age,
                     CreationDate = DateTime.Now,
                     Email = clientModel.Email,
@@ -119,7 +119,8 @@ namespace Movies.web.Controllers
                     LastName = clientModel.LastName,
                     Name = clientModel.Name,
                     PaymentMethodId = clientModel.PaymentMethodId
-
+                    
+                    
 
 
                 };

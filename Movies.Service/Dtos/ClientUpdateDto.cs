@@ -17,7 +17,6 @@ namespace Movies.Service.Dtos
         public int Age { get; set; }
         public int? PaymentMethodId { get; set; }
         public DateTime UpdatedDate { get; set; }
-       
 
     }
 }
