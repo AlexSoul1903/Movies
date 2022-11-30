@@ -8,7 +8,10 @@ namespace Movies.web.Controllers
         // GET: RentInvoiceController
         public ActionResult Index()
         {
-            return View();
+
+
+            IEnumerable<Movies.web.Models.RentInvoice> invoice = new List<Movies.web.Models.RentInvoice>();
+            return View(invoice);
         }
 
         // GET: RentInvoiceController/Details/5

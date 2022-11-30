@@ -9,6 +9,6 @@ namespace Movies.Service.Core
     public class InvoiceDto : BaseDto
     {
         public int? PaymentId { get; set; }
-
+        DateTime Date { get; set; }
     }
 }

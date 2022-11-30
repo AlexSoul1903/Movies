@@ -12,5 +12,6 @@ namespace Movies.Service.Models
         public int PaymentId { get; set; }
         public PaymentModel? Payment { get; set; }
         public int RentId { get; set; }
+        public DateTime Date { get; set; }
     }
 }
