@@ -39,7 +39,7 @@ namespace Movies.Service.Validations
                 result.Message = "Movie director is required";
                 return result;
             }
-
+            
             if (string.IsNullOrEmpty(movie.Duration))
             {
                 result.Success = false;
