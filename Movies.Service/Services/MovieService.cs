@@ -42,7 +42,7 @@ namespace Movies.Service.Services
                     FrontPage = movie.FrontPage,
                     Genre = movie.Genre,
                     Rating = movie.Rating,
-                    RelaseDate = movie.ReleaseDate,
+                    ReleaseDate = movie.ReleaseDate,
                     RentPrice = movie.RentPrice,
                     SalePrice = movie.SalePrice,
                 }).ToList();
@@ -74,7 +74,7 @@ namespace Movies.Service.Services
                     FrontPage = movie.FrontPage,
                     Genre = movie.Genre,
                     Rating = movie.Rating,
-                    RelaseDate = movie.ReleaseDate,
+                    ReleaseDate = movie.ReleaseDate,
                     RentPrice = movie.RentPrice,
                     SalePrice = movie.SalePrice,
                 };
@@ -140,15 +140,26 @@ namespace Movies.Service.Services
             return result;
         }
 
-        public MovieUpdateResponse Update(MovieUpdateDto dto)
+   MovieUpdateResponse IMovieService.Update(MovieUpdateDto dto)
         {
-            MovieUpdateResponse result = new();
+            MovieUpdateResponse result = new MovieUpdateResponse();
             try
             {
                 var movieToUpdate = moviesRepository.GetEntity(dto.Id);
-
+                movieToUpdate.Id = dto.Id;
                 movieToUpdate.UpdatedDate = DateTime.Now;
-
+                movieToUpdate.Name = dto.Name;
+                movieToUpdate.Rating = dto.Rating;
+                movieToUpdate.ReleaseDate = dto.ReleaseDate;
+                movieToUpdate.RentPrice = dto.RentPrice;
+                movieToUpdate.SalePrice = dto.SalePrice;
+                movieToUpdate.FrontPage = dto.FrontPage;
+                movieToUpdate.Genre = dto.Genre;
+                movieToUpdate.Director = dto.Director;
+                movieToUpdate.Duration = dto.Duration;
+              
+              
+                  
                 moviesRepository.Update(movieToUpdate);
 
                 result.Message = "Movie updated successfully";

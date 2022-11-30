@@ -84,9 +84,9 @@ namespace Movies.DAL.Repositories
                 movieToModify.Genre = entity.Genre;
                 movieToModify.RentPrice = entity.RentPrice;
                 movieToModify.SalePrice = entity.SalePrice;
-                movieToModify.ReleaseDate = entity.ReleaseDate;
                 movieToModify.Director = entity.Director;
-               
+                movieToModify.Id = entity.Id;
+            
                 movieToModify.UpdatedDate = DateTime.Now;
 
                 context.movie.Update(movieToModify);
