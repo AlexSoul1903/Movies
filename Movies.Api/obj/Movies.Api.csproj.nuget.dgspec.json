@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.Api\\Movies.Api.csproj": {}
+    "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies18\\Movies\\Movies.Api\\Movies.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.Api\\Movies.Api.csproj": {
+    "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies18\\Movies\\Movies.Api\\Movies.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.Api\\Movies.Api.csproj",
+        "projectUniqueName": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies18\\Movies\\Movies.Api\\Movies.Api.csproj",
         "projectName": "Movies.Api",
-        "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.Api\\Movies.Api.csproj",
+        "projectPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies18\\Movies\\Movies.Api\\Movies.Api.csproj",
         "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies14\\Movies\\Movies.Api\\obj\\",
+        "outputPath": "C:\\Users\\alexm\\source\\repos\\AlexSoul1903\\Movies18\\Movies\\Movies.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",

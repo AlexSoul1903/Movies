@@ -228,9 +228,10 @@ namespace Movies.Service.Services
 
             ClientUpdateResponse result = new ClientUpdateResponse();
 
-           
+            try
+            {
 
-                    ClientUpdateResponse client = new ClientUpdateResponse();
+                ClientUpdateResponse client = new ClientUpdateResponse();
 
                     DAL.Entities.Clients clientToUpdate = clientsRepository.GetEntity(clientUpdateDto.Id);
 
@@ -240,7 +241,7 @@ namespace Movies.Service.Services
                     clientToUpdate.Age = clientUpdateDto.Age;
                     clientToUpdate.Email = clientUpdateDto.Email;
                     clientToUpdate.UpdatedDate = DateTime.Now;
-
+                
 
 
 
@@ -248,12 +249,18 @@ namespace Movies.Service.Services
                     clientsRepository.Update(clientToUpdate);
 
                     result.Message = "Client updated successfully";
-                
-            
 
+
+            }
+            catch (Exception ex)
+            {
+                result.Success = false;
+                result.Message = "Error updating the client";
+                this.logger.LogError($"{result.Message}: {ex.Message}");
+                throw;
+            }
 
             return result;
-
 
 
 
