@@ -3,7 +3,7 @@
     public class Invoice
     {
         public int Id { get; set; }
-        public Payment PaymentInfo { get; set; }
-        public DateOnly Date { get; set; }
+        public int PaymentId { get; set; }
+        public DateTime Date { get; set; }
     }
 }

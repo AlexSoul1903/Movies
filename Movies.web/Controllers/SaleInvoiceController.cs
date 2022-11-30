@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Movies.DAL.Entities;
 
 namespace Movies.web.Controllers
 {
@@ -8,7 +9,9 @@ namespace Movies.web.Controllers
         // GET: SaleInvoiceController
         public ActionResult Index()
         {
-            return View();
+
+            IEnumerable<Movies.web.Models.SaleInvoice> invoice = new List<Movies.web.Models.SaleInvoice>();
+            return View(invoice);
         }
 
         // GET: SaleInvoiceController/Details/5

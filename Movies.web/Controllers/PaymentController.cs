@@ -10,9 +10,10 @@ namespace Movies.web.Controllers
         // GET: PaymentController
         public ActionResult Index()
         {
+            IEnumerable<Payment> pay = new List<Payment>();
+            
 
-
-            return View();
+            return View(pay);
         }
 
         // GET: PaymentController/Details/5

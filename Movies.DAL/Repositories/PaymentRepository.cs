@@ -54,6 +54,7 @@ namespace Movies.DAL.Repositories
             {
                 Payment paymentToModify = GetEntity(payment.Id);
 
+                paymentToModify.Id = payment.Id;
                 paymentToModify.CardNumber = payment.CardNumber;
                 paymentToModify.OwnerName = payment.OwnerName;
                 paymentToModify.Cvv = payment.Cvv;
