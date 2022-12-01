@@ -149,6 +149,12 @@ namespace Movies.Service.Services
 
                 var saleInvoiceToUpdate = saleInvoiceRepository.GetEntity((int)dto.Id);
 
+                if (dto.SaleId != null)
+                    saleInvoiceToUpdate.SaleId = (int)dto.SaleId;
+
+                if (dto.PaymentId != null)
+                    saleInvoiceToUpdate.PaymentId = (int)dto.PaymentId;
+
                 saleInvoiceToUpdate.UpdatedDate = DateTime.Now;
 
                 saleInvoiceRepository.Update(saleInvoiceToUpdate);

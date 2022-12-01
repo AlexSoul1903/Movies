@@ -1,59 +1,57 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Movies.Service.Contracts;
+using Movies.Service.Models;
+using Movies.Service.Services;
+using Movies.web.Extentions;
 
 namespace Movies.web.Controllers
 {
     public class RentInvoiceController : Controller
     {
+        private readonly IRentInvoiceService _rentInvoiceService;
+        public RentInvoiceController (IRentInvoiceService rentInvoiceService)
+        {
+            _rentInvoiceService = rentInvoiceService;
+        }
+
         // GET: RentInvoiceController
         public ActionResult Index()
         {
-
-
-            IEnumerable<Movies.web.Models.RentInvoice> invoice = new List<Movies.web.Models.RentInvoice>();
-            return View(invoice);
+            var rentInvoices = ((List<Service.Models.RentInvoiceModel>)_rentInvoiceService.GetAll().Data).ConvertRentInvoiceModelToModel();
+            return View(rentInvoices);
         }
 
         // GET: RentInvoiceController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
-        }
-
-        // GET: RentInvoiceController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: RentInvoiceController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var rentInvoice = ((Service.Models.RentInvoiceModel)_rentInvoiceService.GetById(id).Data).ConvertRentInvoiceToModel();
+            return View(rentInvoice);
         }
 
         // GET: RentInvoiceController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var rentInvoice = ((Service.Models.RentInvoiceModel)_rentInvoiceService.GetById(id).Data).ConvertRentInvoiceToModel();
+            return View(rentInvoice);
         }
 
         // POST: RentInvoiceController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(Models.RentInvoice rentInvoiceModel)
         {
             try
             {
+                var rentInvoiceDto = new Service.Dtos.RentInvoiceUpdateDto()
+                {
+                    Id = rentInvoiceModel.Id,
+                    RentId = rentInvoiceModel.RentId,
+                    PaymentId = rentInvoiceModel.PaymentId,
+                };
+
+                _rentInvoiceService.Update(rentInvoiceDto);
+
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -65,16 +63,24 @@ namespace Movies.web.Controllers
         // GET: RentInvoiceController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var rentInvoice = ((Service.Models.RentInvoiceModel)_rentInvoiceService.GetById(id).Data).ConvertRentInvoiceToModel();
+            return View(rentInvoice);
         }
 
         // POST: RentInvoiceController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(RentInvoiceModel rentInvoiceModel)
         {
             try
             {
+                var rentInvoiceRemoveDto = new Service.Dtos.RentInvoiceRemoveDto()
+                {
+                    Id = rentInvoiceModel.Id,
+                };
+
+                _rentInvoiceService.Remove(rentInvoiceRemoveDto);
+
                 return RedirectToAction(nameof(Index));
             }
             catch
