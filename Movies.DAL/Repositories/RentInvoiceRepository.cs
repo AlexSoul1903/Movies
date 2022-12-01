@@ -53,6 +53,7 @@ namespace Movies.DAL.Repositories
             try
             {
                 RentInvoice rentInvoiceToModify = GetEntity(rentInvoice.Id);
+                rentInvoiceToModify.RentId = rentInvoice.RentId;
                 rentInvoiceToModify.PaymentId = rentInvoice.PaymentId;
                 rentInvoiceToModify.UpdatedDate = DateTime.Now;
 

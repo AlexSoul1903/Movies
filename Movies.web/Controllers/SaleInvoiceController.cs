@@ -1,59 +1,58 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Movies.DAL.Entities;
+using Movies.Service.Contracts;
+using Movies.Service.Models;
+using Movies.Service.Services;
+using Movies.web.Extentions;
 
 namespace Movies.web.Controllers
 {
     public class SaleInvoiceController : Controller
     {
+        private readonly ISaleInvoiceService _saleInvoiceService;
+
+        public SaleInvoiceController(ISaleInvoiceService saleInvoiceService)
+        {
+            _saleInvoiceService = saleInvoiceService;
+        }
+
         // GET: SaleInvoiceController
         public ActionResult Index()
         {
-
-            IEnumerable<Movies.web.Models.SaleInvoice> invoice = new List<Movies.web.Models.SaleInvoice>();
-            return View(invoice);
+            var saleInvoices = ((List<Service.Models.SaleInvoiceModel>)_saleInvoiceService.GetAll().Data).ConvertSaleInvoiceModelToModel();
+            return View(saleInvoices);
         }
 
         // GET: SaleInvoiceController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
-        }
-
-        // GET: SaleInvoiceController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: SaleInvoiceController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var saleInvoice = ((Service.Models.SaleInvoiceModel)_saleInvoiceService.GetById(id).Data).ConvertSaleInvoiceToModel();
+            return View(saleInvoice);
         }
 
         // GET: SaleInvoiceController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var saleInvoice = ((Service.Models.SaleInvoiceModel)_saleInvoiceService.GetById(id).Data).ConvertSaleInvoiceToModel();
+            return View(saleInvoice);
         }
 
         // POST: SaleInvoiceController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(SaleInvoiceModel saleInvoiceModel)
         {
             try
             {
+                var saleInvoiceDto = new Service.Dtos.SaleInvoiceUpdateDto()
+                {
+                    Id = saleInvoiceModel.Id,
+                    SaleId = saleInvoiceModel.SaleId,
+                    PaymentId = saleInvoiceModel.PaymentId,
+                };
+
+                _saleInvoiceService.Update(saleInvoiceDto);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -65,16 +64,24 @@ namespace Movies.web.Controllers
         // GET: SaleInvoiceController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var saleInvoice = ((Service.Models.SaleInvoiceModel)_saleInvoiceService.GetById(id).Data).ConvertSaleInvoiceToModel();
+            return View(saleInvoice);
         }
 
         // POST: SaleInvoiceController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(SaleInvoiceModel saleInvoiceModel)
         {
             try
             {
+                var saleInvoiceRemoveDto = new Service.Dtos.SaleInvoiceRemoveDto()
+                {
+                    Id = saleInvoiceModel.Id,
+                };
+
+                _saleInvoiceService.Remove(saleInvoiceRemoveDto);
+
                 return RedirectToAction(nameof(Index));
             }
             catch
