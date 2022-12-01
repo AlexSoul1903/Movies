@@ -4,6 +4,5 @@
     {
         public int Id { get; set; }
         public int PaymentId { get; set; }
-        public DateTime Date { get; set; }
     }
 }

@@ -7,21 +7,17 @@
 
 <h1 class="text-light">Rent Invoice</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table text-light">
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.RentId)
             </th>
-           
             <th>
                 @Html.DisplayNameFor(model => model.PaymentId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Date)
             </th>
             <th></th>
         </tr>
@@ -30,19 +26,18 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.RentId)
             </td>
-            
             <td>
                 @Html.DisplayFor(modelItem => item.PaymentId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
             </td>
         </tr>
 }

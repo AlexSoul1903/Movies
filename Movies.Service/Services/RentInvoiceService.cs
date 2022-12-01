@@ -36,6 +36,7 @@ namespace Movies.Service.Services
 
                 result.Data = rentInvoices.Select((rentInvoice) =>
                 {
+                    if (rentInvoice.PaymentId != null) { }
                     var rentInvoicePayment = paymentRepository.GetEntity(rentInvoice.PaymentId);
 
                     return new RentInvoiceModel()
@@ -147,6 +148,12 @@ namespace Movies.Service.Services
                 };
 
                 var rentInvoiceToUpdate = rentInvoiceRepository.GetEntity((int)dto.Id);
+
+                if (dto.RentId != null)
+                    rentInvoiceToUpdate.RentId = (int)dto.RentId;
+
+                if (dto.PaymentId != null)
+                    rentInvoiceToUpdate.PaymentId = (int)dto.PaymentId;
 
                 rentInvoiceToUpdate.UpdatedDate = DateTime.Now;
 
