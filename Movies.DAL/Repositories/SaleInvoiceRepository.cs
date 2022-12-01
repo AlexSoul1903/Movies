@@ -56,6 +56,7 @@ namespace Movies.DAL.Repositories
             try
             {
                 SaleInvoice saleInvoiceToModify = GetEntity(saleInvoice.Id);
+                saleInvoiceToModify.SaleId = saleInvoice.SaleId;
                 saleInvoiceToModify.PaymentId = saleInvoice.PaymentId;
                 saleInvoiceToModify.UpdatedDate = DateTime.Now;
 
