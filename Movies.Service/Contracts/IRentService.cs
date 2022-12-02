@@ -13,6 +13,5 @@ namespace Movies.Service.Contracts
     {
         RentBuyResponse RentMovie(RentBuyDto rentBuyDto);
         ServiceResult GetRent(RentDto rentDto);
-
     }
 }

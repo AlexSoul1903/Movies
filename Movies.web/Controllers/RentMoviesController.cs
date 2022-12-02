@@ -112,7 +112,6 @@ namespace Movies.web.Controllers
 
 
 
-
                 };
 
                 _rentService.RentMovie(rent);

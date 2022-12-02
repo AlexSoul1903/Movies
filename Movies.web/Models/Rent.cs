@@ -1,4 +1,5 @@
-﻿namespace Movies.web.Models
+﻿
+namespace Movies.web.Models
 {
     public class Rent
     {

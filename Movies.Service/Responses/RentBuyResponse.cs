@@ -16,5 +16,6 @@ namespace Movies.Service.Responses
         public double SalePrice { get; set; }
         public DateTime ExpirationDate { get; set; }
 
+
     }
 }
