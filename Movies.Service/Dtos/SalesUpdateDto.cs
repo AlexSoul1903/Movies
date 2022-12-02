@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Movies.Service.Dtos
 {
-    public class SaleBuyDto: Core.SaleDto
+    public class SalesUpdateDto
     {
-        public int id { get; set; }
+        public int Id { get; set; }
+        public int ClientId { get; set; }
         public DateTime SaleDate { get; set; }
         public int MovieId { get; set; }
         public double SalePrice { get; set; }
-        public DateTime CreationDate { get; set; }
         public DateTime UpdatedDate { get; set; }
-        public DateTime DeletedDate { get; set; }
     }
 }

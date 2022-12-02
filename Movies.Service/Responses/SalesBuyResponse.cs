@@ -13,5 +13,6 @@ namespace Movies.Service.Responses
         public DateTime SaleDate { get; set; }
         public int MovieId { get; set; }
         public double SalePrice { get; set; }
+        public DateTime CreationDate { get; set; }
     }
 }

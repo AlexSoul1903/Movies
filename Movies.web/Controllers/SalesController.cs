@@ -1,7 +1,15 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Movies.DAL.Interfaces;
+using Movies.Service.Contracts;
+using Movies.Service.Models;
+using Movies.Service.Services;
+using Movies.web.Extentions;
 using Movies.web.Models;
+using Movies.web.ViewModels;
+using NuGet.Configuration;
+using System;
+using System.Linq;
 
 namespace Movies.web.Controllers
 {
@@ -9,36 +17,26 @@ namespace Movies.web.Controllers
     {
         // GET: SalesController
 
-        
+        private readonly ISalesService _SalesService;
+        public SalesController(ISalesService salesService)
+        {
+            _SalesService = salesService;
+        }
+
 
         public ActionResult Index()
-        {
+        { 
 
-            DateTime fecha =  DateTime.Now;
-          
-            IEnumerable<Sales> sales = new List<Sales>() {
+            var sales = ((List<Service.Models.SaleModel>)_SalesService.GetAll().Data).ConvertSaleModelToModel();
 
-               
-
-                new Sales
-                {
-                     Id=1,
-                ClientId=2,
-                MovieId=3,
-                SaleDate=fecha,
-                SalePrice=180
-                },
-
-             
-
-            };
             return View(sales);
         }
 
         // GET: SalesController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var saleModel = ((SaleModel)this._SalesService.GetById(id).Data).ConvertFromSaleModelToSales();
+            return View(saleModel);
         }
 
         // GET: SalesController/Create
@@ -50,10 +48,23 @@ namespace Movies.web.Controllers
         // POST: SalesController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Sales saleModel)
         {
             try
             {
+                Service.Dtos.SaleBuyDto salesDto = new Service.Dtos.SaleBuyDto()
+                {
+
+                    Id = saleModel.Id,
+                    ClientId = saleModel.ClientId,
+                    MovieId = saleModel.MovieId,
+                    SalePrice = saleModel.SalePrice,
+                    SaleDate = DateTime.Now,
+                    CreationDate = DateTime.Now,
+                    
+                };
+                _SalesService.SaleResponse(salesDto);
+
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -65,20 +76,50 @@ namespace Movies.web.Controllers
         // GET: SalesController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var sale = (Service.Models.SaleModel)_SalesService.GetById(id).Data;
+
+            Models.Sales ModelSales = new Models.Sales()
+            {
+                Id = sale.Id,
+                ClientId = sale.ClientId,
+                MovieId = sale.MovieId,
+                SalePrice = sale.SalePrice,
+                SaleDate = DateTime.Now,
+                CreationDate = DateTime.Now
+            };
+
+
+
+            return View(ModelSales);
         }
 
         // POST: SalesController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(Models.Sales saleModel)
         {
             try
             {
+                var myModel = saleModel;
+
+                Movies.Service.Dtos.SalesUpdateDto sale = new Service.Dtos.SalesUpdateDto()
+                {
+                    Id = myModel.Id,
+                   ClientId = myModel.ClientId,
+                   MovieId = myModel.MovieId,
+                   SalePrice = myModel.SalePrice,
+                   SaleDate = DateTime.Now,
+                   UpdatedDate = DateTime.Now,                  
+
+                };
+
+                _SalesService.UpdateSale(sale);
+
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception error)
             {
+                Console.WriteLine(error);
                 return View();
             }
         }
@@ -86,20 +127,46 @@ namespace Movies.web.Controllers
         // GET: SalesController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var sale = (Service.Models.SaleModel)_SalesService.GetById(id).Data;
+
+            Models.Sales ModelSales = new Models.Sales()
+            {
+                Id = sale.Id,
+                ClientId = sale.ClientId,
+                MovieId = sale.MovieId,
+                SalePrice = sale.SalePrice,
+                SaleDate = DateTime.Now,
+                CreationDate = DateTime.Now
+            };
+
+
+            return View(ModelSales);
         }
 
         // POST: SalesController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(Sales saleModel)
         {
             try
             {
+                var myModel = saleModel;
+
+                Service.Dtos.SalesDeleteDto saleDelete = new Service.Dtos.SalesDeleteDto()
+                {
+                    Id = saleModel.Id
+
+                };
+
+                _SalesService.DeleteSale(saleDelete);
+
+
+
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception error)
             {
+                Console.WriteLine(error);
                 return View();
             }
         }
