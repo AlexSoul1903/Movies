@@ -1,30 +1,44 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Movies.DAL.Interfaces;
+using Movies.Service.Contracts;
+using Movies.Service.Models;
+using Movies.Service.Services;
+using Movies.web.Extentions;
 using Movies.web.Models;
+using Movies.web.ViewModels;
+using NuGet.Configuration;
+using System;
+using System.Linq;
 
 
 namespace Movies.web.Controllers
 {
     public class PaymentController : Controller
     {
-        // GET: PaymentController
-        public ActionResult Index()
+        private readonly IPaymentService _paymentService;
+
+        public PaymentController(IPaymentService paymentService)
         {
-            IEnumerable<Payment> pay = new List<Payment>();
+            _paymentService = paymentService;
+        }
+
+
+
+        // GET: PaymentController
+         public ActionResult Index()
+        {
+            var payments = ((List<Service.Models.PaymentModel>)_paymentService.GetAll().Data).ConvertPaymentModelToModel();
             
 
-            return View(pay);
+            return View(payments);
         }
 
         // GET: PaymentController/Details/5
         public ActionResult Details(int id)
         {
-            Payment payment = new Payment();
-            payment.CardNumber = Convert.ToInt64(Request.Form["CardNumber"]);
-            payment.OwnerName = Request.Form["OwnerName"].ToString();
-            payment.ExpirationDate = Convert.ToInt32(Request.Form["ExpirationDate"]);
-            payment.Cvv = Convert.ToInt32(Request.Form["CVV"]);
-            return View();
+            var paymentModel = ((PaymentModel)this._paymentService.GetById(id).Data).ConvertFromPaymentModelToPayment();
+            return View(paymentModel);
         }
 
         // GET: PaymentController/Create
@@ -36,10 +50,18 @@ namespace Movies.web.Controllers
         // POST: PaymentController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Payment paymentModel)
         {
             try
             {
+                Service.Dtos.PaymentSaveDto paymentSaveDto = new Service.Dtos.PaymentSaveDto()
+                {
+                    CardNumber = paymentModel.CardNumber,
+                    OwnerName = paymentModel.OwnerName,
+                    Id = paymentModel.Id,
+                    ExpirationDate = paymentModel.ExpirationDate,
+                    Cvv = paymentModel.Cvv
+                };
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -51,20 +73,42 @@ namespace Movies.web.Controllers
         // GET: PaymentController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var payment = (Service.Models.PaymentModel)_paymentService.GetById(id).Data;
+            Models.Payment ModelPayment = new Models.Payment()
+            {
+                CardNumber = payment.CardNumber,
+                OwnerName = payment.OwnerName,
+                Id = payment.Id,
+                ExpirationDate = payment.ExpirationDate,
+                Cvv = payment.Cvv
+            };
+            return View(ModelPayment);
         }
 
         // POST: PaymentController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(Models.Payment paymentModel)
         {
             try
             {
+                var myModel = paymentModel;
+
+                Movies.Service.Dtos.PaymentUpdateDto payment = new Service.Dtos.PaymentUpdateDto()
+                {
+                    CardNumber = paymentModel.CardNumber,
+                    OwnerName = paymentModel.OwnerName,
+                    Id = paymentModel.Id,
+                    ExpirationDate = paymentModel.ExpirationDate,
+                    Cvv = paymentModel.Cvv
+                };
+
+                _paymentService.UpdatePayment(payment);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception err)
             {
+                Console.WriteLine(err);
                 return View();
             }
         }
@@ -72,20 +116,36 @@ namespace Movies.web.Controllers
         // GET: PaymentController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var payment = (Service.Models.PaymentModel)_paymentService.GetById(id).Data;
+            Models.Payment ModelPayment = new Models.Payment()
+            {
+                CardNumber = payment.CardNumber,
+                OwnerName = payment.OwnerName,
+                Id = payment.Id,
+                ExpirationDate = payment.ExpirationDate,
+                Cvv = payment.Cvv
+
+            };
+            return View(ModelPayment);
         }
 
         // POST: PaymentController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(Payment paymentModel)
         {
             try
             {
+                var myModel = paymentModel;
+                Service.Dtos.PaymentRemoveDto paymentRemove = new Service.Dtos.PaymentRemoveDto()
+                {
+                    Id = paymentModel.Id
+                };
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception err)
             {
+                Console.WriteLine(err);
                 return View();
             }
         }
