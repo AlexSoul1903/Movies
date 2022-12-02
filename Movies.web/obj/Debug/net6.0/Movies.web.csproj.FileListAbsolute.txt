@@ -4698,3 +4698,14 @@ C:\Users\alexm\source\repos\AlexSoul1903\Movies19\Movies\Movies.web\obj\Debug\ne
 C:\Users\alexm\source\repos\AlexSoul1903\Movies19\Movies\Movies.web\obj\Debug\net6.0\Movies.web.pdb
 C:\Users\alexm\source\repos\AlexSoul1903\Movies19\Movies\Movies.web\obj\Debug\net6.0\Movies.web.genruntimeconfig.cache
 C:\Users\alexm\source\repos\AlexSoul1903\Movies19\Movies\Movies.web\obj\Debug\net6.0\ref\Movies.web.dll
+C:\MyProyects\Movies\Movies.web\obj\Debug\net6.0\Movies.web.dll
+C:\MyProyects\Movies\Movies.web\obj\Debug\net6.0\ref\Movies.web.dll
+C:\MyProyects\Movies\Movies.web\obj\Debug\net6.0\Movies.web.pdb
+C:\MyProyects\Movies\Movies.web\obj\Debug\net6.0\Movies.web.csproj.AssemblyReference.cache
+C:\MyProyects\Movies\Movies.web\obj\Debug\net6.0\Movies.web.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyProyects\Movies\Movies.web\obj\Debug\net6.0\Movies.web.AssemblyInfoInputs.cache
+C:\MyProyects\Movies\Movies.web\obj\Debug\net6.0\Movies.web.AssemblyInfo.cs
+C:\MyProyects\Movies\Movies.web\obj\Debug\net6.0\Movies.web.csproj.CoreCompileInputs.cache
+C:\MyProyects\Movies\Movies.web\obj\Debug\net6.0\Movies.web.MvcApplicationPartsAssemblyInfo.cache
+C:\MyProyects\Movies\Movies.web\obj\Debug\net6.0\Movies.web.RazorAssemblyInfo.cache
+C:\MyProyects\Movies\Movies.web\obj\Debug\net6.0\Movies.web.RazorAssemblyInfo.cs

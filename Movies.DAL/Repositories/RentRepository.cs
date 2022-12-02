@@ -60,7 +60,7 @@ namespace Movies.DAL.Repositories
                 Rent rentToModify = GetEntity(rent.Id);
 
                 rentToModify.Id = rent.Id;
-                rentToModify.ClientID = rent.ClientID;
+                rentToModify.ClientId = rent.ClientId;
                 rentToModify.RentPrice = rent.RentPrice;
                 rentToModify.RentDate = rent.RentDate;
                 rentToModify.ExpirationDate = rent.ExpirationDate;
