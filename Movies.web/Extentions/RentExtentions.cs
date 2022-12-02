@@ -3,6 +3,7 @@ using Movies.Service.Models;
 using System.Collections.Generic;
 using System.Linq;
 
+
 namespace Movies.web.Extentions
 {
     public static class RentExtentions

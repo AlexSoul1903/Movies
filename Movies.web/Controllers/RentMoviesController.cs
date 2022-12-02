@@ -11,6 +11,7 @@ using NuGet.Configuration;
 using System;
 using System.Linq;
 
+
 namespace Movies.web.Controllers
 {
     public class RentMoviesController : Controller
@@ -128,6 +129,7 @@ namespace Movies.web.Controllers
             // We cannot delete the rents
             return View();
         }
+
 
         // POST: RentController/Delete/5
         [HttpPost]
