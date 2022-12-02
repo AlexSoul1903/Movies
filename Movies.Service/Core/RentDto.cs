@@ -11,6 +11,5 @@ namespace Movies.Service.Core
     {
         public int ClientId { get; set; }
 
-
     }
 }
