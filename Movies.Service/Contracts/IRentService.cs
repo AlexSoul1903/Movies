@@ -12,6 +12,6 @@ namespace Movies.Service.Contracts
     public interface IRentService:IBaseService
     {
         RentBuyResponse RentMovie(RentBuyDto rentBuyDto);
-        ServiceResult GetRent(RentDto rentDto);
+        ServiceResult GetRent(RentDto rentDto); 
     }
 }

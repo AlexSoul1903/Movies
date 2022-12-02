@@ -8,7 +8,6 @@ namespace Movies.Service.Responses
 {
     public class RentBuyResponse: Core.ServiceResult
     {
-
         public int Id { get; set; }
         public int ClientId { get; set; }
         public DateOnly RentDate { get; set; }

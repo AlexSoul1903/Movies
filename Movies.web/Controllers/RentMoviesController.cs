@@ -109,9 +109,6 @@ namespace Movies.web.Controllers
                     MovieId = rentModel.MovieId,
                     RentPrice = rentModel.RentPrice,
                     ExpirationDate = rentModel.ExpirationDate
-
-
-
                 };
 
                 _rentService.RentMovie(rent);
