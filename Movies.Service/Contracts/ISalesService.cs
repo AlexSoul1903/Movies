@@ -11,7 +11,9 @@ namespace Movies.Service.Contracts
 {
     public interface ISalesService : IBaseService
     {
-        SalesBuyResponse BuyMovie(SaleBuyDto saleBuyDto);
+         SalesDeleteResponse DeleteSale(SalesDeleteDto saleDeleteDto);
+        SalesUpdateResponse UpdateSale(SalesUpdateDto saleUpdateDto);
+        SalesBuyResponse SaleResponse(SaleBuyDto saleBuyDto);
         ServiceResult GetSale(SaleDto saleDto);
     }
 }
