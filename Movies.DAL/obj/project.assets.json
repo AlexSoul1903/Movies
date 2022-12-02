@@ -1767,24 +1767,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ferli\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ericm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.DAL\\Movies.DAL.csproj",
+      "projectUniqueName": "C:\\MyProyects\\Movies\\Movies.DAL\\Movies.DAL.csproj",
       "projectName": "Movies.DAL",
-      "projectPath": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.DAL\\Movies.DAL.csproj",
-      "packagesPath": "C:\\Users\\ferli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferli\\Source\\Repos\\Movies\\Movies.DAL\\obj\\",
+      "projectPath": "C:\\MyProyects\\Movies\\Movies.DAL\\Movies.DAL.csproj",
+      "packagesPath": "C:\\Users\\ericm\\.nuget\\packages\\",
+      "outputPath": "C:\\MyProyects\\Movies\\Movies.DAL\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ferli\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ericm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1834,7 +1829,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
       }
     }
   }
