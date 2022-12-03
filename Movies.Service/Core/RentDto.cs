@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 namespace Movies.Service.Core
 {
     public class RentDto:BaseDto
-
     {
         public int ClientId { get; set; }
-
 
     }
 }

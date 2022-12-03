@@ -1,4 +1,5 @@
-﻿namespace Movies.web.Models
+﻿
+namespace Movies.web.Models
 {
     public class Rent
     {
@@ -8,6 +9,7 @@
         public double RentPrice { get; set; }
         public DateTime RentDate { get; set; }
         public DateTime ExpirationDate { get; set; }
+
        }
     }
 

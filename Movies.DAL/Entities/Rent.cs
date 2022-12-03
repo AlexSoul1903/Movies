@@ -9,7 +9,6 @@ namespace Movies.DAL.Entities
     public class Rent : Core.BaseEntity
     {
      
-        public int ClientID { get; set; }
         public int ClientId { get; set; }
         public int MovieID { get; set; }
         public double RentPrice{ get; set; }
