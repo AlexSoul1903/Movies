@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Movies.DAL.Interfaces;
 using Movies.Service.Contracts;
+using Movies.Service.Core;
 using Movies.Service.Models;
 using Movies.Service.Services;
 using Movies.web.Extentions;
@@ -52,18 +54,17 @@ namespace Movies.web.Controllers
         {
             try
             {
-                Service.Dtos.SaleBuyDto salesDto = new Service.Dtos.SaleBuyDto()
+                
+                Service.Dtos.SaleBuyDto saveSaleDto = new Service.Dtos.SaleBuyDto()
                 {
 
-                    Id = saleModel.Id,
                     ClientId = saleModel.ClientId,
                     MovieId = saleModel.MovieId,
                     SalePrice = saleModel.SalePrice,
-                    SaleDate = DateTime.Now,
+                    SaleDate = saleModel.SaleDate,
                     CreationDate = DateTime.Now,
-                    
                 };
-                _SalesService.SaleResponse(salesDto);
+                _SalesService.SaleResponse(saveSaleDto);
 
                 return RedirectToAction(nameof(Index));
             }
@@ -76,21 +77,21 @@ namespace Movies.web.Controllers
         // GET: SalesController/Edit/5
         public ActionResult Edit(int id)
         {
-            var sale = (Service.Models.SaleModel)_SalesService.GetById(id).Data;
+            var sales = (Service.Models.SaleModel)_SalesService.GetById(id).Data;
 
-            Models.Sales ModelSales = new Models.Sales()
+            Models.Sales salesModel = new Models.Sales()
             {
-                Id = sale.Id,
-                ClientId = sale.ClientId,
-                MovieId = sale.MovieId,
-                SalePrice = sale.SalePrice,
-                SaleDate = DateTime.Now,
-                CreationDate = DateTime.Now
+                Id = sales.Id,
+                ClientId = sales.ClientId,
+                MovieId = sales.MovieId,
+                SaleDate = sales.SaleDate,
+                SalePrice = sales.SalePrice,
+
             };
 
 
 
-            return View(ModelSales);
+            return View(salesModel);
         }
 
         // POST: SalesController/Edit/5
@@ -102,20 +103,20 @@ namespace Movies.web.Controllers
             {
                 var myModel = saleModel;
 
-                Movies.Service.Dtos.SalesUpdateDto sale = new Service.Dtos.SalesUpdateDto()
+                Movies.Service.Dtos.SalesUpdateDto Sale = new Service.Dtos.SalesUpdateDto()
                 {
-                    Id = myModel.Id,
-                   ClientId = myModel.ClientId,
-                   MovieId = myModel.MovieId,
-                   SalePrice = myModel.SalePrice,
-                   SaleDate = DateTime.Now,
-                   UpdatedDate = DateTime.Now,                  
+                    Id = saleModel.Id,
+                    ClientId = saleModel.ClientId,
+                    MovieId = saleModel.MovieId,
+                    SalePrice = saleModel.SalePrice,
+                    SaleDate = saleModel.SaleDate,
+                    UpdatedDate = DateTime.Now,
 
                 };
 
-                _SalesService.UpdateSale(sale);
-
+                _SalesService.UpdateSale(Sale);
                 return RedirectToAction(nameof(Index));
+
             }
             catch(Exception error)
             {

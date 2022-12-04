@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.Api\\Movies.Api.csproj": {}
+    "C:\\Users\\saryr\\source\\repos\\Movies 2\\Movies.Api\\Movies.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.Api\\Movies.Api.csproj": {
+    "C:\\Users\\saryr\\source\\repos\\Movies 2\\Movies.Api\\Movies.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.Api\\Movies.Api.csproj",
+        "projectUniqueName": "C:\\Users\\saryr\\source\\repos\\Movies 2\\Movies.Api\\Movies.Api.csproj",
         "projectName": "Movies.Api",
-        "projectPath": "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.Api\\Movies.Api.csproj",
-        "packagesPath": "C:\\Users\\ferli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.Api\\obj\\",
+        "projectPath": "C:\\Users\\saryr\\source\\repos\\Movies 2\\Movies.Api\\Movies.Api.csproj",
+        "packagesPath": "C:\\Users\\saryr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\saryr\\source\\repos\\Movies 2\\Movies.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ferli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\saryr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +56,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -67,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

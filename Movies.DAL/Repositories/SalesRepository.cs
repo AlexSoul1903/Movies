@@ -59,20 +59,23 @@ namespace Movies.DAL.Repositories
         {
             try
             {
-                Sales salesToModify = GetEntity(sales.Id);
-                salesToModify.Id = sales.Id;
-                salesToModify.ClientId = sales.ClientId;
-                salesToModify.MovieId = sales.MovieId;
-                salesToModify.SalePrice = sales.SalePrice;
-                salesToModify.SaleDate = sales.SaleDate;
+                Sales SaleToModify = GetEntity(sales.Id);
+                SaleToModify.Id = sales.Id;
+                SaleToModify.ClientId = sales.ClientId;
+                SaleToModify.MovieId = sales.MovieId;
+                SaleToModify.SalePrice = sales.SalePrice;
+                SaleToModify.SaleDate = sales.SaleDate;
+                SaleToModify.CreationDate = sales.CreationDate;
+                SaleToModify.UpdatedDate = DateTime.Now;
 
-                context.Sale.Add(salesToModify);
+                context.Sale.Update(SaleToModify);
                 context.SaveChanges();
-
             }
             catch (Exception ex)
             {
-                this.logger.LogError($"Error: {ex.Message}", ex.ToString );
+                this.logger.LogError($"Error: {ex.Message}", ex.ToString());
+                Console.WriteLine(ex.Message);
+
             }
         }
     }

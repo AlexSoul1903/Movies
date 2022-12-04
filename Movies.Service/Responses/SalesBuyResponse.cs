@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Movies.Service.Responses
 {
-    public class SalesBuyResponse
+    public class SalesBuyResponse : Core.ServiceResult
     {
         public int Id { get; set; }
         public int ClientId { get; set; }

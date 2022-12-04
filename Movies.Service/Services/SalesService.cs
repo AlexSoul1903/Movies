@@ -28,7 +28,6 @@ namespace Movies.Service.Services
         }
         public SalesBuyResponse SaleResponse(SaleBuyDto saleBuyDto)
         {
-            ServiceResult result = new ServiceResult();
             SalesBuyResponse resultSale = new SalesBuyResponse();
             try
             {
@@ -36,36 +35,27 @@ namespace Movies.Service.Services
                 var resutlIsValid = ValidationSales.IsValidSale(saleBuyDto);
                 if (resutlIsValid.Success)
                 {
+
                     DAL.Entities.Sales SaleToAdd = new DAL.Entities.Sales()
                     {
-                        Id = (int)saleBuyDto.Id,
                         ClientId = saleBuyDto.ClientId,
                         MovieId = saleBuyDto.MovieId,
                         SaleDate = saleBuyDto.SaleDate,
                         SalePrice = saleBuyDto.SalePrice,
-                        CreationDate = DateTime.Now
+                        CreationDate = DateTime.Now,
                     };
 
                     salesRepository.Save(SaleToAdd);
 
-                    resultSale.Id = SaleToAdd.Id;
-                    resultSale.ClientId = SaleToAdd.ClientId;
-                    resultSale.MovieId = SaleToAdd.MovieId;
-                    resultSale.SalePrice = SaleToAdd.SalePrice;
-                    resultSale.SaleDate = SaleToAdd.SaleDate;
-                    resultSale.CreationDate = SaleToAdd.CreationDate;
-
-
-
-                    result.Message = "Sale successfull";
-
+                    resultSale.Message = "Sale saved successfully";
                 }
+            
             }
 
             catch (Exception ex)
             {
-                 result.Success= false;
-                 result.Message= "Error to complete the sale";
+                 resultSale.Success= false;
+                 resultSale.Message= "Error to complete the sale";
                 this.logger.LogError($"{ex.Message}", ex.ToString());
 
             }
@@ -198,27 +188,22 @@ namespace Movies.Service.Services
 
             try
             {
+                
 
-                SalesUpdateResponse Sales = new SalesUpdateResponse();
+                        DAL.Entities.Sales saleToUpdate = salesRepository.GetEntity(saleUpdateDto.Id);
+                        saleToUpdate.ClientId = saleUpdateDto.ClientId; 
+                        saleToUpdate.Id = saleUpdateDto.Id;
+                        saleToUpdate.MovieId = saleUpdateDto.MovieId;
+                        saleToUpdate.SalePrice = saleUpdateDto.SalePrice;
+                        saleToUpdate.SaleDate = saleUpdateDto.SaleDate;
+                        saleToUpdate.UpdatedDate = DateTime.Now;
 
-                DAL.Entities.Sales saleToUpdate = salesRepository.GetEntity(saleUpdateDto.Id);
-
-                saleToUpdate.Id = saleUpdateDto.Id;
-                saleToUpdate.ClientId = saleUpdateDto.ClientId;
-                saleToUpdate.MovieId = saleUpdateDto.MovieId;
-                saleToUpdate.SaleDate = saleUpdateDto.SaleDate;
-                saleToUpdate.SalePrice = saleToUpdate.SalePrice;
-                saleToUpdate.UpdatedDate = DateTime.Now;
-
-
+                        salesRepository.Update(saleToUpdate);
 
 
 
-                salesRepository.Update(saleToUpdate);
-
-                result.Message = "Sale updated successfully";
-
-
+                        result.Message = "The Sale was added";
+                    
             }
             catch (Exception ex)
             {
