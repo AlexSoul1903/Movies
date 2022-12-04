@@ -62,6 +62,7 @@ namespace Movies.web.Controllers
                     ExpirationDate = paymentModel.ExpirationDate,
                     Cvv = paymentModel.Cvv
                 };
+                _paymentService.SavePayment(paymentSaveDto);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -82,6 +83,7 @@ namespace Movies.web.Controllers
                 ExpirationDate = payment.ExpirationDate,
                 Cvv = payment.Cvv
             };
+            
             return View(ModelPayment);
         }
 
@@ -92,7 +94,7 @@ namespace Movies.web.Controllers
         {
             try
             {
-                var myModel = paymentModel;
+                var model = paymentModel;
 
                 Movies.Service.Dtos.PaymentUpdateDto payment = new Service.Dtos.PaymentUpdateDto()
                 {
@@ -114,9 +116,9 @@ namespace Movies.web.Controllers
         }
 
         // GET: PaymentController/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(int Id)
         {
-            var payment = (Service.Models.PaymentModel)_paymentService.GetById(id).Data;
+            var payment = (Service.Models.PaymentModel)_paymentService.GetById(Id).Data;
             Models.Payment ModelPayment = new Models.Payment()
             {
                 CardNumber = payment.CardNumber,
@@ -126,6 +128,7 @@ namespace Movies.web.Controllers
                 Cvv = payment.Cvv
 
             };
+            
             return View(ModelPayment);
         }
 
@@ -141,6 +144,7 @@ namespace Movies.web.Controllers
                 {
                     Id = paymentModel.Id
                 };
+                _paymentService.RemovePayment(paymentRemove);
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception err)
