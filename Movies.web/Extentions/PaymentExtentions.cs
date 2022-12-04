@@ -5,10 +5,10 @@ namespace Movies.web.Extentions
 {
     public static class PaymentExtentions
     {
-        public static List<Payment> ConvertPaymentModelToModel(this List<Service.Models.PaymentModel> paymentModels)
+        public static List<Movies.web.Models.Payment> ConvertPaymentModelToModel(this List<Service.Models.PaymentModel> paymentModels)
         {
 
-            var myPayments = paymentModels.Select(payment => new Payment()
+            var myPayments = paymentModels.Select(payment => new Movies.web.Models.Payment()
             {
                 CardNumber = payment.CardNumber,
                 OwnerName = payment.OwnerName,
