@@ -9408,11 +9408,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.web\\Movies.web.csproj",
+      "projectUniqueName": "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.web\\Movies.web.csproj",
       "projectName": "Movies.web",
-      "projectPath": "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.web\\Movies.web.csproj",
+      "projectPath": "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.web\\Movies.web.csproj",
       "packagesPath": "C:\\Users\\ferli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.web\\obj\\",
+      "outputPath": "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9433,11 +9433,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.DAL\\Movies.DAL.csproj": {
-              "projectPath": "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.DAL\\Movies.DAL.csproj"
+            "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.DAL\\Movies.DAL.csproj": {
+              "projectPath": "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.DAL\\Movies.DAL.csproj"
             },
-            "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.Service\\Movies.Service.csproj": {
-              "projectPath": "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.Service\\Movies.Service.csproj"
+            "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.Service\\Movies.Service.csproj": {
+              "projectPath": "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.Service\\Movies.Service.csproj"
             }
           }
         }

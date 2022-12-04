@@ -234,6 +234,8 @@ namespace Movies.Service.Services
                     paymentToUpdate.OwnerName = paymentUpdateDto.OwnerName;
                     paymentToUpdate.ExpirationDate = paymentUpdateDto.ExpirationDate;
                     paymentToUpdate.Cvv = paymentUpdateDto.Cvv;
+
+                    paymentRepository.Update(paymentToUpdate);
                     result.Message = "Payment updated successfully!";
                 }
 
