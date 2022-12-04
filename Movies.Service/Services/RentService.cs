@@ -140,7 +140,7 @@ namespace Movies.Service.Services
                 DAL.Entities.Rent RentToAdd = new DAL.Entities.Rent()
                 {
                     Id = (int)rentBuyDto.Id,
-                   ClientID = rentBuyDto.ClientId,
+                    ClientId= rentBuyDto.ClientId,
                    MovieID  = rentBuyDto.MovieId,
                    RentDate=DateTime.Now,
                     RentPrice=rentBuyDto.RentPrice,
@@ -150,7 +150,7 @@ namespace Movies.Service.Services
                 rentRepository.Save(RentToAdd);
 
                 resultRent.Id = RentToAdd.Id;
-                resultRent.ClientId = RentToAdd.ClientID;
+                resultRent.ClientId = RentToAdd.ClientId;
                 resultRent.MovieId = RentToAdd.MovieID;
                 resultRent.SalePrice = RentToAdd.RentPrice;
         
