@@ -8,6 +8,6 @@ namespace Movies.Service.Dtos
 {
     public class PaymentUpdateDto : Core.DtoPaymentBase
     {
-        public DateTime? UpdatedDate { get; set; }
+        public DateTime UpdatedDate { get; set; }
     }
 }
