@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Movies.web",
+    "\\Movies.web\\Controllers"
   ],
-  "SelectedNode": "\\Movies.sln",
+  "SelectedNode": "\\Movies.web\\Controllers\\HomeController1.cs",
   "PreviewInSolutionExplorer": false
 }
