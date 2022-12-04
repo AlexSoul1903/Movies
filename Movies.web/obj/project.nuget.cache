@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/Yjo2ghBgCy8aUkiaBLyPehuC4ymY221kUEV0eNGC/8oCsbhOaLb7QZLjgO+/ElLgBhJABPiKo2xxE7R5AGDMA==",
+  "dgSpecHash": "CLaZsXpxAp0jRLCnZyFd69jVEQigSE7IvLnVwgGUakMoVnwWs8aXD75GlMYwri7sipp2eUJ7rOs2ejxAHxZ0kg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.web\\Movies.web.csproj",
+  "projectFilePath": "C:\\Users\\ferli\\source\\repos\\Movies4\\Movies.web\\Movies.web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ferli\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\ferli\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
