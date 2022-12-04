@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ferli\\Source\\Repos\\Movies3\\Movies.Api\\Movies.Api.csproj": {}
+    "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.Api\\Movies.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ferli\\Source\\Repos\\Movies3\\Movies.Api\\Movies.Api.csproj": {
+    "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.Api\\Movies.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferli\\Source\\Repos\\Movies3\\Movies.Api\\Movies.Api.csproj",
+        "projectUniqueName": "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.Api\\Movies.Api.csproj",
         "projectName": "Movies.Api",
-        "projectPath": "C:\\Users\\ferli\\Source\\Repos\\Movies3\\Movies.Api\\Movies.Api.csproj",
+        "projectPath": "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.Api\\Movies.Api.csproj",
         "packagesPath": "C:\\Users\\ferli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferli\\Source\\Repos\\Movies3\\Movies.Api\\obj\\",
+        "outputPath": "C:\\Users\\ferli\\Source\\Repos\\Movies4\\Movies.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
