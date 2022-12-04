@@ -8,7 +8,7 @@ namespace Movies.web.Extentions
         public static List<Movies.web.Models.Payment> ConvertPaymentModelToModel(this List<Service.Models.PaymentModel> paymentModels)
         {
 
-            var myPayments = paymentModels.Select(payment => new Movies.web.Models.Payment()
+            var payments = paymentModels.Select(payment => new Movies.web.Models.Payment()
             {
                 CardNumber = payment.CardNumber,
                 OwnerName = payment.OwnerName,
@@ -18,13 +18,13 @@ namespace Movies.web.Extentions
 
             }).ToList();
 
-            return myPayments;
+            return payments;
         }
 
 
         public static List<Payment> GetPayment(List<Service.Models.PaymentModel> paymentModels)
         {
-            var myPayments = paymentModels.Select(payment => new Payment()
+            var paymentss = paymentModels.Select(payment => new Payment()
             {
                 CardNumber = payment.CardNumber,
                 OwnerName = payment.OwnerName,
@@ -34,7 +34,7 @@ namespace Movies.web.Extentions
 
             }).ToList();
 
-            return myPayments;
+            return paymentss;
         }
 
 
