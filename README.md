@@ -8,7 +8,7 @@ Este proyecto consiste en un sitio web desarrollado en https://github.com/saryra
 
 - Ferlin Miguel Feliz Guerrero (2021-2244)
 
-- AlexSoul1903 (DEMO-ID)
+- AlexSoul1903
 
 - Kristyn Elizabeth Herrera Felix (2021-1966)
 
